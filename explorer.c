@@ -3,13 +3,14 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-int main() {
+int main(void) {
     // Step 1: Read the random seed value from seed.txt
     FILE *seedFile = fopen("seed.txt", "r");
     if (seedFile == NULL) {
         perror("Failed to open seed.txt");
         return 1;
     }
+
     int seed;
     if (fscanf(seedFile, "%d", &seed) != 1) {
         perror("Error reading seed value");
@@ -17,6 +18,7 @@ int main() {
         return 1;
     }
     fclose(seedFile);
+
     printf("Read seed value: %d\n", seed);
     printf("Read seed value (converted to integer): %d\n", seed);
 
@@ -33,6 +35,7 @@ int main() {
     // Step 4: Fork children and assign random attributes
     for (int i = 0; i < numChild; i++) {
         pid_t pid = fork(); // process ID of child is forked 
+
         if (pid < 0) { // if the child has no pid 
             perror("Fork failed");
             return 1;
@@ -40,6 +43,7 @@ int main() {
             // Child process
             int waitTime = (rand() % 3) + 1;    // Random delay between 1 and 3 seconds
             int exitCode = (rand() % 50) + 1;  // Random exit code between 1 and 50
+
             printf("[Child, PID: %d]: I am the child and I will wait %d seconds and exit with code %d.\n", getpid(), waitTime, exitCode);
             sleep(waitTime);
             printf("[Child, PID: %d]: Now exiting...\n", getpid());
@@ -52,8 +56,10 @@ int main() {
             
             // Parent process
             printf("[Parent]: I am waiting for PID %d to finish.\n", pid);
+
             int status;
             waitpid(pid, &status, 0);
+
             if (WIFEXITED(status)) { // The WIFEXITED checks if the child process exited normally (not by signal)
                 printf("[Parent]: Child %d finished with status code %d. Onward!\n", pid, WEXITSTATUS(status)); // Retrieves the exit status of the child process if it exited normally
             }
