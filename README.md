@@ -1,5 +1,6 @@
 Project 1 
 Vivek Reddy Kasireddy & Jahnavi 
+Parts 1,2,& 3 are completed. 
 
 1. How does the choice to generate random numbers before forking affect process behavior?
 
@@ -7,3 +8,5 @@ Generating random numbers before forking ensures that each child process inherit
 
 3. Describe the debugging steps you would follow if ”The Explorer” produced incorrect directory listings. How would you validate each step? Add your answer to your README.
 To debug incorrect directory listings in "The Explorer," first verify the input path and ensure proper permissions. Then, check the code for directory listing, confirm hidden files are included, and test the output with other tools. Additionally, validate the file system integrity, restart the application, and check for updates or bugs.
+
+PARTS 4 & 5 yet to be done. 
