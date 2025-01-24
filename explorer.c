@@ -25,46 +25,52 @@ int main(void) {
     // Step 2: Seed the random number generator
     srand(seed);
 
-    // Step 3: Generate a random number of children (8 to 13 inclusively)
-    int minChild = 8;
-    int maxChild = 13;
-    int numChild = minChild + (rand() % (maxChild - minChild + 1));
-    printf("Random Child Count: %d\n", numChild);
-    printf("I’m feeling prolific!\n");
+    // Step 3: Define the directories 
+    // it is an array of string pointers, where each pointer points to a null-terminated string representing a direcotry path
+    const char *directories[] = {"/home", "/proc", "/proc/sys", "/usr", "/usr/bin", "/bin"}; //define the directories and put them in an array
+    int numDirectories = 6; 
+   
+   // Step 4: Explore the five directories 
+   for (int i = 0; i < 5; i++) { 
+    // generates a random directory index 
+    int dirIndex = rand() % numDirectories; // uses the modulo operator to select one of the six predefined directories for each iteration 
+    // changes the current working directory 
+    if (chdir(directories[dirIndex]) != 0) { // changes the current working directory
+        perror("changing direcotry failed"); 
+        continue; 
+    }
+    // get and print the current working 
+    char cwd[1024]; 
+    if (getcwd(cwd, sizeof(cwd)) == NULL) { // retrives the absolute path of the current directory
+        perror("getcwd failed"); 
+        continue; 
+    }
+    printf("Selection #%d: %s [SUCCESS]\n", i+1, directories[dirIndex]); 
+    printf("Current reported directory: %s\n", cwd); 
 
-    // Step 4: Fork children and assign random attributes
-    for (int i = 0; i < numChild; i++) {
-        pid_t pid = fork(); // process ID of child is forked 
-
-        if (pid < 0) { // if the child has no pid 
-            perror("Fork failed");
-            return 1;
-        } else if (pid == 0) {
-            // Child process
-            int waitTime = (rand() % 3) + 1;    // Random delay between 1 and 3 seconds
-            int exitCode = (rand() % 50) + 1;  // Random exit code between 1 and 50
-
-            printf("[Child, PID: %d]: I am the child and I will wait %d seconds and exit with code %d.\n", getpid(), waitTime, exitCode);
-            sleep(waitTime);
-            printf("[Child, PID: %d]: Now exiting...\n", getpid());
-            exit(exitCode);
-        } else { 
-            // to fork off a child process and wait for it using system calls, 
-            // you would use the fork() function to create the child process and then use waitpid() 
-            // to wait for the child to finish, and uses macros like WIFEXITED and WEXITSTATUS 
-            // to properly interept the child's exit status within the parent process 
-            
-            // Parent process
-            printf("[Parent]: I am waiting for PID %d to finish.\n", pid);
-
-            int status;
-            waitpid(pid, &status, 0);
-
-            if (WIFEXITED(status)) { // The WIFEXITED checks if the child process exited normally (not by signal)
-                printf("[Parent]: Child %d finished with status code %d. Onward!\n", pid, WEXITSTATUS(status)); // Retrieves the exit status of the child process if it exited normally
-            }
+    // fork a child process 
+    pid_t pid = fork(); 
+    if (pid < 0) { 
+        perror("Fork failed"); 
+        return 1; 
+    } else if (pid == 0) { // a child process is created using fork() and the child runs the ls -tr command using execlp() 
+        // child process 
+        printf("[Child, PID: %d]: Executing 'ls -tr' command...\n", getpid()); 
+        execlp("ls", "ls", "-tr", NULL); 
+        // if execlp fails 
+        perror("execlp failed"); 
+        exit(1); 
+    } else { 
+        // parent process 
+        // the parent waits for the child to complete and retrives the child's exit status
+        int status; 
+        waitpid(pid, &status, 0); 
+        if (WIFEXITED(status)) { 
+            printf("[Panret]: Child %d finished with status code %d. Onward!\n", pid, WEXITSTATUS(status)); 
         }
     }
 
-    return 0;
+    }
+    return 0; 
+
 }
