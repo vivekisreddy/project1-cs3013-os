@@ -4,7 +4,6 @@
 #include <sys/wait.h>
 
 int main() {
-    // Step 1: Read the random seed value from seed.txt
     FILE *seedFile = fopen("seed.txt", "r");
     if (seedFile == NULL) {
         perror("Failed to open seed.txt");
@@ -20,26 +19,23 @@ int main() {
     printf("Read seed value: %d\n", seed);
     printf("Read seed value (converted to integer): %d\n", seed);
 
-    // Step 2: Seed the random number generator
     srand(seed);
 
-    // Step 3: Generate a random number of children (8 to 13 inclusively)
     int minChild = 8;
     int maxChild = 13;
     int numChild = minChild + (rand() % (maxChild - minChild + 1));
     printf("Random Child Count: %d\n", numChild);
     printf("I’m feeling prolific!\n");
 
-    // Step 4: Fork children and assign random attributes
     for (int i = 0; i < numChild; i++) {
-        pid_t pid = fork(); // process ID of child is forked 
-        if (pid < 0) { // if the child has no pid 
+        pid_t pid = fork(); 
+        if (pid < 0) { 
             perror("Fork failed");
             return 1;
         } else if (pid == 0) {
             // Child process
-            int waitTime = (rand() % 3) + 1;    // Random delay between 1 and 3 seconds
-            int exitCode = (rand() % 50) + 1;  // Random exit code between 1 and 50
+            int waitTime = (rand() % 3) + 1;   
+            int exitCode = (rand() % 50) + 1; 
             printf("[Child, PID: %d]: I am the child and I will wait %d seconds and exit with code %d.\n", getpid(), waitTime, exitCode);
             sleep(waitTime);
             printf("[Child, PID: %d]: Now exiting...\n", getpid());
