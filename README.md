@@ -24,7 +24,9 @@ If the child processes did not wait for their descendants, then the parent-child
 
 To debug incorrect directory listings in "The Explorer," first verify the input path and ensure proper permissions. Then, check the code for directory listing, confirm hidden files are included, and test the output with other tools. Additionally, validate the file system integrity, restart the application, and check for updates or bugs.
 
-
-
 To debug incorrect directory listings in "The Explorer," first verify the input path and ensure proper permissions. Then, check the code for directory listing, confirm hidden files are included, and test the output with other tools. Additionally, validate the file system integrity, restart the application, and check for updates or bugs.
 
+##Question 4
+4. Why is using different seed files critical when running parallel processes in the Slug Race? 
+
+If you use different seed files when running parallel processes, it will make sure that each process behaves uniquely and avoids identical random behavior. If the same seed is used for every process, the rand() will generate same sequence of random numbers each time. This means, that all processes would have same delay times, and same coin flips, which means that the program would execute the same commands at the same time. This is not a realistic behavior.
