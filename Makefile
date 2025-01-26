@@ -16,3 +16,9 @@ generation: generation.c
 clean:
 	rm -f generation
 
+generation: slug.c
+	gcc -o slug slug.c
+
+clean:
+	rm -f slug
+
