@@ -1,24 +1,46 @@
-prolific: prolific.c
-	gcc -o prolific prolific.c
+CC = gcc
+CFLAGS = -Wall
+PROGRAMS = prolific explorer generation slug slugrace
 
-clean:
-	rm -f prolific
+all: $(PROGRAMS)
+	@echo "All programs built successfully."
+
+
+prolific: prolific.c
+	$(CC) $(CFLAGS) -o prolific prolific.c
+	@echo "Built prolific."
 
 explorer: explorer.c
-	gcc -o explorer explorer.c
+	$(CC) $(CFLAGS) -o explorer explorer.c
+	@echo "Built explorer."
 
-clean:
-	rm -f explorer
-  
 generation: generation.c
-	gcc -o generation generation.c
+	$(CC) $(CFLAGS) -o generation generation.c
+	@echo "Built generation."
+
+slug: slug.c
+	$(CC) $(CFLAGS) -o slug slug.c
+	@echo "Built slug."
+
+slugrace: slugrace.c
+	$(CC) $(CFLAGS) -o slugrace slugrace.c
+	@echo "Built slugrace."
 
 clean:
-	rm -f generation
+	rm -f $(PROGRAMS)
+	@echo "Cleaned up all executables."
 
-generation: slug.c
-	gcc -o slug slug.c
+run_prolific:
+	./prolific
 
-clean:
-	rm -f slug
+run_explorer:
+	./explorer
 
+run_generation:
+	./generation
+
+run_slug:
+	./slug
+
+run_slugrace:
+	./slugrace

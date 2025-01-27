@@ -1,59 +1,0 @@
-Script started on 2025-01-22 12:39:56-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="85" LINES="36"]
-[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ vi prolific.c ls[Kcat prolific.cls[Kcat prolific.cls[Kgit push -u origin main[A]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ [C[C[C[Ccommit -m "f[C[Cished prolific.c, need to compile and test" [A]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ [C[C[C[C[6Padd .
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd project1-cs3013-os/[A]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ls[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd project1/ls[Kcd Desktop/project1/ls[Kmkdir project1ls[Kcd Desktop/[K[K[K[K[K[K[K[K[K[K[Kgcc prolific.c  -o test
-[?2004l[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ make prolific.c [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kc
-[?2004lmake: Nothing to be done for 'prolific.c'.
-[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./test
-[?2004lRead seed value: 12345
-Read seed value (converted to integer): 12345
-Random Child Count: 11
-I’m feeling prolific!
-[Parent]: I am waiting for PID 9770 to finish.
-[Child, PID: 9770]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9770]: Now exiting...
-[Parent]: Child 9770 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9795 to finish.
-[Child, PID: 9795]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9795]: Now exiting...
-[Parent]: Child 9795 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9820 to finish.
-[Child, PID: 9820]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9820]: Now exiting...
-[Parent]: Child 9820 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9821 to finish.
-[Child, PID: 9821]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9821]: Now exiting...
-[Parent]: Child 9821 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9846 to finish.
-[Child, PID: 9846]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9846]: Now exiting...
-[Parent]: Child 9846 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9860 to finish.
-[Child, PID: 9860]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9860]: Now exiting...
-[Parent]: Child 9860 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9871 to finish.
-[Child, PID: 9871]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9871]: Now exiting...
-[Parent]: Child 9871 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9896 to finish.
-[Child, PID: 9896]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9896]: Now exiting...
-[Parent]: Child 9896 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9901 to finish.
-[Child, PID: 9901]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9901]: Now exiting...
-[Parent]: Child 9901 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9926 to finish.
-[Child, PID: 9926]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9926]: Now exiting...
-[Parent]: Child 9926 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 9940 to finish.
-[Child, PID: 9940]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 9940]: Now exiting...
-[Parent]: Child 9940 finished with status code 24. Onward!
-[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ exit
-[?2004lexit
-
-Script done on 2025-01-22 12:42:02-05:00 [COMMAND_EXIT_CODE="0"]

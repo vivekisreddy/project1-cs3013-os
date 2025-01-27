@@ -1,7 +1,12 @@
 
-Project 1 
-Vivek Reddy Kasireddy & Jahnavi 
-Parts 1,2,& 3 are completed. 
+# Project 1 
+# Vivek Reddy Kasireddy & Jahnavi 
+
+The makefile compiles all of the 5 files at once using the make all command. Then the run command, executes all 5 filea at once. 
+
+## Pitfalls 
+The 'make' compiles all the 5 files without problem. You have to individually run each program individually using ./ prolific, explorer, generation, slug, and slugrace. For ./ slug you have to add number 1-4 for the for slugs like this "./slug 1" would run slug.c on the "seed_slug_1.txt" file. Do the same for the other three files. 
+
 
 # Project 1 
 
@@ -26,7 +31,11 @@ To debug incorrect directory listings in "The Explorer," first verify the input 
 
 To debug incorrect directory listings in "The Explorer," first verify the input path and ensure proper permissions. Then, check the code for directory listing, confirm hidden files are included, and test the output with other tools. Additionally, validate the file system integrity, restart the application, and check for updates or bugs.
 
-##Question 4
+## Question 4
 4. Why is using different seed files critical when running parallel processes in the Slug Race? 
 
 If you use different seed files when running parallel processes, it will make sure that each process behaves uniquely and avoids identical random behavior. If the same seed is used for every process, the rand() will generate same sequence of random numbers each time. This means, that all processes would have same delay times, and same coin flips, which means that the program would execute the same commands at the same time. This is not a realistic behavior.
+
+## Question 5 
+5. Imagine a real-world application for ”The Slug Race” concept. How would you implement additional logging or monitoring? Add your answer your README.
+"The Slug Race" concept can be applied to a delivery system where robots or drones transport packages across a city. These robots race to their destination, with the goal of delivering packages as quickly as possible.

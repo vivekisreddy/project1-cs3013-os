@@ -1,16 +1,116 @@
-Script started on 2025-01-24 02:06:05-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="102" LINES="20"]
-student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ gcc explorer.c -o explorer
+Script started on 2025-01-27 02:16:32-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="102" LINES="15"]
+student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ make
+gcc -Wall -o prolific prolific.c
+Built prolific.
+gcc -Wall -o explorer explorer.c
+Built explorer.
+gcc -Wall -o generation generation.c
+Built generation.
+gcc -Wall -o slug slug.c
+Built slug.
+gcc -Wall -o slugrace slugrace.c
+Built slugrace.
+All programs built successfully.
+student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ ./prolific
+Read seed value: 12345
+Read seed value (converted to integer): 12345
+Random Child Count: 11
+I’m feeling prolific!
+[Parent]: I am waiting for PID 32353 to finish.
+[Child, PID: 32353]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32353]: Now exiting...
+[Parent]: Child 32353 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32378 to finish.
+[Child, PID: 32378]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32378]: Now exiting...
+[Parent]: Child 32378 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32392 to finish.
+[Child, PID: 32392]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32392]: Now exiting...
+[Parent]: Child 32392 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32403 to finish.
+[Child, PID: 32403]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32403]: Now exiting...
+[Parent]: Child 32403 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32428 to finish.
+[Child, PID: 32428]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32428]: Now exiting...
+[Parent]: Child 32428 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32430 to finish.
+[Child, PID: 32430]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32430]: Now exiting...
+[Parent]: Child 32430 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32455 to finish.
+[Child, PID: 32455]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32455]: Now exiting...
+[Parent]: Child 32455 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32472 to finish.
+[Child, PID: 32472]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32472]: Now exiting...
+[Parent]: Child 32472 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32483 to finish.
+[Child, PID: 32483]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32483]: Now exiting...
+[Parent]: Child 32483 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32508 to finish.
+[Child, PID: 32508]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32508]: Now exiting...
+[Parent]: Child 32508 finished with status code 24. Onward!
+[Parent]: I am waiting for PID 32509 to finish.
+[Child, PID: 32509]: I am the child and I will wait 3 seconds and exit with code 24.
+[Child, PID: 32509]: Now exiting...
+[Parent]: Child 32509 finished with status code 24. Onward!
+student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ ./generation
+Read seed value: 12345
+Random lifespan count: 12
+Time to meet the kids/grandkids/great grand kids/...
+[Parent, PID: 32552]: I am waiting for PID 32553 to finish
+[Child, PID: 32553]: I was called with descendant count = 12 and I'll have 11 descendants.
+[Parent, PID: 32553]: I am waiting for PID 32554 to finish
+[Child, PID: 32554]: I was called with descendant count = 11 and I'll have 10 descendants.
+[Parent, PID: 32554]: I am waiting for PID 32555 to finish
+[Child, PID: 32555]: I was called with descendant count = 10 and I'll have 9 descendants.
+[Parent, PID: 32555]: I am waiting for PID 32556 to finish
+[Child, PID: 32556]: I was called with descendant count = 9 and I'll have 8 descendants.
+[Parent, PID: 32556]: I am waiting for PID 32557 to finish
+[Child, PID: 32557]: I was called with descendant count = 8 and I'll have 7 descendants.
+[Parent, PID: 32557]: I am waiting for PID 32558 to finish
+[Child, PID: 32558]: I was called with descendant count = 7 and I'll have 6 descendants.
+[Parent, PID: 32558]: I am waiting for PID 32559 to finish
+[Child, PID: 32559]: I was called with descendant count = 6 and I'll have 5 descendants.
+[Parent, PID: 32559]: I am waiting for PID 32560 to finish
+[Child, PID: 32560]: I was called with descendant count = 5 and I'll have 4 descendants.
+[Parent, PID: 32560]: I am waiting for PID 32561 to finish
+[Child, PID: 32561]: I was called with descendant count = 4 and I'll have 3 descendants.
+[Parent, PID: 32561]: I am waiting for PID 32562 to finish
+[Child, PID: 32562]: I was called with descendant count = 3 and I'll have 2 descendants.
+[Parent, PID: 32562]: I am waiting for PID 32563 to finish
+[Child, PID: 32563]: I was called with descendant count = 2 and I'll have 1 descendants.
+[Parent, PID: 32563]: I am waiting for PID 32564 to finish
+[Child, PID: 32564]: I was called with descendant count = 1 and I'll have 0 descendants.
+[Parent, PID: 32563]: Child 32564 finished with status code = 0. It’s now my turn to exit
+[Parent, PID: 32562]: Child 32563 finished with status code = 1. It’s now my turn to exit
+[Parent, PID: 32561]: Child 32562 finished with status code = 2. It’s now my turn to exit
+[Parent, PID: 32560]: Child 32561 finished with status code = 3. It’s now my turn to exit
+[Parent, PID: 32559]: Child 32560 finished with status code = 4. It’s now my turn to exit
+[Parent, PID: 32558]: Child 32559 finished with status code = 5. It’s now my turn to exit
+[Parent, PID: 32557]: Child 32558 finished with status code = 6. It’s now my turn to exit
+[Parent, PID: 32556]: Child 32557 finished with status code = 7. It’s now my turn to exit
+[Parent, PID: 32555]: Child 32556 finished with status code = 8. It’s now my turn to exit
+[Parent, PID: 32554]: Child 32555 finished with status code = 9. It’s now my turn to exit
+[Parent, PID: 32553]: Child 32554 finished with status code = 10. It’s now my turn to exit
+[Parent, PID: 32552]: Child 32553 finished with status code = 11. It’s now my turn to exit
 student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ ./explorer
 Read seed value: 12345
 Read seed value (converted to integer): 12345
 Selection #1: /usr [SUCCESS]
 Current reported directory: /usr
-[Child, PID: 16500]: Executing 'ls -tr' command...
+[Child, PID: 32570]: Executing 'ls -tr' command...
 local  games  share  lib  include  sbin	 libexec  src  bin
-[Panret]: Child 16500 finished with status code 0. Onward!
+[Panret]: Child 32570 finished with status code 0. Onward!
 Selection #2: /bin [SUCCESS]
 Current reported directory: /usr/bin
-[Child, PID: 16501]: Executing 'ls -tr' command...
+[Child, PID: 32571]: Executing 'ls -tr' command...
  run-one			       lzcmp
  run-this-one			       lzcat
  run-one-until-success		       pinentry
@@ -936,10 +1036,10 @@ Current reported directory: /usr/bin
  lzfgrep			       vim.basic
  lzegrep			       gvimtutor
  lzdiff
-[Panret]: Child 16501 finished with status code 0. Onward!
+[Panret]: Child 32571 finished with status code 0. Onward!
 Selection #3: /bin [SUCCESS]
 Current reported directory: /usr/bin
-[Child, PID: 16502]: Executing 'ls -tr' command...
+[Child, PID: 32572]: Executing 'ls -tr' command...
  run-one			       lzcmp
  run-this-one			       lzcat
  run-one-until-success		       pinentry
@@ -1865,45 +1965,362 @@ Current reported directory: /usr/bin
  lzfgrep			       vim.basic
  lzegrep			       gvimtutor
  lzdiff
-[Panret]: Child 16502 finished with status code 0. Onward!
+[Panret]: Child 32572 finished with status code 0. Onward!
 Selection #4: /proc [SUCCESS]
 Current reported directory: /proc
-[Child, PID: 16503]: Executing 'ls -tr' command...
-thread-self  8	  154	   interrupts  1293  1546  1706	 1941	14595		   key-users
-self	     6	  15	   798	       1301  1549  1736	 1922	version_signature  keys
-cmdline	     5	  14	   800	       1300  1555  1667	 2907	15812		   kallsyms
-filesystems  4	  13	   799	       1299  1559  1780	 2976	15661		   ioports
-sys	     371  12	   803	       1302  1564  1726	 2978	15879		   iomem
-1	     370  115	   815	       1306  1568  1804	 2982	zoneinfo	   fs
-uptime	     34	  111	   816	       1422  1569  1816	 2983	vmstat		   fb
-acpi	     33	  110	   kmsg	       1410  1567  1814	 3030	vmallocinfo	   execdomains
-net	     32	  11	   817	       1427  1570  844	 3039	version		   dynamic_debug
-kcore	     318  107	   826	       1436  1572  480	 3077	tty		   driver
-cgroups	     31	  10	   835	       1310  1574  479	 3121	timer_list	   diskstats
-cpuinfo	     30	  swaps	   860	       1437  1597  478	 3465	sysvipc		   crypto
-98	     3	  mounts   868	       1445  1633  475	 3650	sysrq-trigger	   consoles
-97	     29	  devices  869	       1448  1639  1621	 2985	softirqs	   bus
-96	     28	  442	   881	       1440  1623  1867	 5951	slabinfo	   buddyinfo
-95	     26	  meminfo  904	       1442  1644  1903	 5969	scsi		   bootconfig
-93	     25	  481	   926	       1456  1649  1916	 8858	schedstat	   16022
-92	     24	  509	   927	       1461  1645  1920	 9447	pressure	   16023
-91	     22	  707	   935	       1469  1659  1919	 10148	partitions	   16322
-88	     21	  769	   940	       1472  1662  1976	 10536	pagetypeinfo	   16323
-87	     203  771	   942	       1482  1654  2006	 11009	modules		   16503
-86	     201  783	   938	       1480  1678  2027	 12316	misc		   16499
-85	     20	  785	   1006	       1485  1686  2068	 14348	mdstat
-84	     2	  787	   asound      1494  1691  2239	 14349	locks
-83	     19	  786	   1076	       1499  1679  2262	 14347	loadavg
-82	     18	  794	   1232	       1506  1701  2311	 14089	kpageflags
-81	     16	  irq	   1275	       1527  1708  2313	 14506	kpagecount
-80	     155  stat	   1292	       1528  1717  2483	 14665	kpagecgroup
-[Panret]: Child 16503 finished with status code 0. Onward!
+[Child, PID: 32573]: Executing 'ls -tr' command...
+thread-self  4	  111	      826     1445  1644  1919	 20771		    kpageflags
+self	     371  110	      835     1448  1649  1976	 22375		    kpagecount
+cmdline	     370  11	      860     1440  1645  2006	 fs		    kpagecgroup
+filesystems  34	  107	      868     1442  1659  2027	 version_signature  key-users
+sys	     33	  10	      869     1456  1662  2068	 24013		    kallsyms
+1	     32	  swaps	      881     1461  1654  2239	 vmstat		    ioports
+uptime	     318  mounts      904     1469  1678  2262	 tty		    execdomains
+acpi	     31	  devices     926     1472  1686  2311	 scsi		    dynamic_debug
+net	     30	  442	      927     1482  1691  2313	 misc		    diskstats
+kcore	     3	  meminfo     935     1480  1679  2483	 mdstat		    consoles
+cgroups	     29	  481	      940     1485  1701  1941	 locks		    buddyinfo
+cpuinfo	     28	  509	      942     1494  1708  1922	 keys		    bootconfig
+98	     26	  707	      938     1499  1717  2907	 iomem		    24985
+97	     25	  769	      1006    1506  1706  2976	 fb		    24987
+96	     24	  771	      asound  1527  1736  2978	 driver		    24988
+95	     22	  783	      1076    1528  1667  2982	 crypto		    24980
+93	     21	  785	      1232    1546  1780  2983	 bus		    24971
+92	     203  787	      1275    1549  1726  3030	 zoneinfo	    28412
+91	     201  786	      1292    1555  1804  3039	 vmallocinfo	    28482
+88	     20	  794	      1293    1559  1816  3077	 version	    28946
+87	     2	  irq	      1301    1564  1814  3121	 timer_list	    28896
+86	     19	  stat	      1300    1568  844	  3465	 sysvipc	    29712
+85	     18	  interrupts  1299    1569  480	  3650	 sysrq-trigger	    31116
+84	     16	  798	      1302    1567  479	  2985	 softirqs	    32156
+83	     155  800	      1306    1570  478	  5951	 slabinfo	    32251
+82	     154  799	      1422    1572  475	  8858	 schedstat	    32252
+81	     15	  803	      1410    1574  1621  9447	 pressure	    32429
+80	     14	  815	      1427    1597  1867  19136	 partitions	    32573
+8	     13	  816	      1436    1633  1903  20717	 pagetypeinfo	    32569
+6	     12	  kmsg	      1310    1639  1916  20737	 modules
+5	     115  817	      1437    1623  1920  20761	 loadavg
+[Panret]: Child 32573 finished with status code 0. Onward!
 Selection #5: /usr [SUCCESS]
 Current reported directory: /usr
-[Child, PID: 16504]: Executing 'ls -tr' command...
+[Child, PID: 32574]: Executing 'ls -tr' command...
 local  games  share  lib  include  sbin	 libexec  src  bin
-[Panret]: Child 16504 finished with status code 0. Onward!
+[Panret]: Child 32574 finished with status code 0. Onward!
+student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ ./slug 1
+[SLUG PID: 32626]: Read seed value: 55555
+[SLUG PID: 32626]: Read seed value (converted to integer): 55555
+[Slug PID: 32626] Delay time is 6 seconds. Coin flip: 0
+[Slug PID: 32626] I’ll get the job done. Eventually...
+[SLUG PID: 32626]: Break time is over! I am running the 'id -u -x' command.
+student	 tty7	      0.0.0.0	       Mon Jan 20 23:13	   gone - no logout
+runlevel (to lvl 5)   0.0.0.0	       Mon Jan 20 23:10	  still running
+reboot	 system boot  0.0.0.0	       Mon Jan 20 23:10	  still running
+student	 tty7	      0.0.0.0	       Fri Jan 17 15:07 - crash (3+08:02)
+runlevel (to lvl 5)   0.0.0.0	       Fri Jan 17 15:07 - 23:10 (3+08:03)
+reboot	 system boot  0.0.0.0	       Fri Jan 17 15:07	  still running
+student	 tty7	      0.0.0.0	       Thu Jan 16 15:15 - crash	 (23:52)
+runlevel (to lvl 5)   0.0.0.0	       Thu Jan 16 15:02 - 15:07 (1+00:05)
+reboot	 system boot  0.0.0.0	       Thu Jan 16 15:02	  still running
+shutdown system down  0.0.0.0	       Wed Aug 28 11:28 - 15:02 (141+04:33)
+student	 tty7	      0.0.0.0	       Wed Aug 28 11:28 - 11:28	 (00:00)
+runlevel (to lvl 5)   0.0.0.0	       Wed Aug 28 11:28 - 11:28	 (00:00)
+reboot	 system boot  0.0.0.0	       Wed Aug 28 11:28 - 11:28	 (00:00)
+shutdown system down  0.0.0.0	       Wed Aug 28 11:28 - 11:28	 (00:00)
+student	 tty7	      0.0.0.0	       Wed Aug 28 11:26 - 11:28	 (00:01)
+runlevel (to lvl 5)   0.0.0.0	       Wed Aug 28 11:26 - 11:28	 (00:01)
+reboot	 system boot  0.0.0.0	       Wed Aug 28 11:26 - 11:28	 (00:01)
+shutdown system down  0.0.0.0	       Wed Aug 28 11:26 - 11:26	 (00:00)
+student	 tty7	      0.0.0.0	       Wed Aug 28 11:13 - 11:26	 (00:13)
+runlevel (to lvl 5)   0.0.0.0	       Wed Aug 28 11:12 - 11:26	 (00:13)
+reboot	 system boot  0.0.0.0	       Wed Aug 28 11:12 - 11:26	 (00:13)
+shutdown system down  0.0.0.0	       Wed Aug 28 11:12 - 11:12	 (00:00)
+student	 tty7	      0.0.0.0	       Wed Aug 28 11:04 - 11:12	 (00:08)
+runlevel (to lvl 5)   0.0.0.0	       Wed Aug 28 11:04 - 11:12	 (00:08)
+reboot	 system boot  0.0.0.0	       Wed Aug 28 11:04 - 11:12	 (00:08)
+shutdown system down  0.0.0.0	       Mon Mar 25 08:32 - 11:04 (156+02:31)
+student	 tty7	      0.0.0.0	       Mon Mar 25 08:29 - 08:32	 (00:03)
+student	 tty7	      0.0.0.0	       Mon Mar 25 08:24 - 08:28	 (00:04)
+runlevel (to lvl 5)   0.0.0.0	       Mon Mar 25 08:24 - 08:32	 (00:08)
+reboot	 system boot  0.0.0.0	       Mon Mar 25 08:24 - 08:32	 (00:08)
+shutdown system down  0.0.0.0	       Mon Mar 25 08:21 - 08:24	 (00:02)
+student	 tty7	      0.0.0.0	       Mon Mar 25 08:21 - 08:21	 (00:00)
+runlevel (to lvl 5)   0.0.0.0	       Mon Mar 25 08:21 - 08:21	 (00:00)
+reboot	 system boot  0.0.0.0	       Mon Mar 25 08:21 - 08:21	 (00:00)
+shutdown system down  0.0.0.0	       Mon Mar 25 08:21 - 08:21	 (00:00)
+student	 tty7	      0.0.0.0	       Mon Mar 25 08:14 - 08:21	 (00:06)
+runlevel (to lvl 5)   0.0.0.0	       Mon Mar 25 08:14 - 08:21	 (00:07)
+reboot	 system boot  0.0.0.0	       Mon Mar 25 08:14 - 08:21	 (00:07)
+shutdown system down  0.0.0.0	       Fri Mar 22 14:24 - 08:14 (2+17:49)
+student	 tty7	      0.0.0.0	       Fri Mar 22 14:17 - 14:24	 (00:06)
+runlevel (to lvl 5)   0.0.0.0	       Fri Mar 22 14:15 - 14:24	 (00:08)
+reboot	 system boot  0.0.0.0	       Fri Mar 22 14:15 - 14:24	 (00:08)
+shutdown system down  0.0.0.0	       Thu Mar 21 11:36 - 14:15 (1+02:38)
+student	 tty7	      0.0.0.0	       Thu Mar 21 11:30 - 11:36	 (00:06)
+runlevel (to lvl 5)   0.0.0.0	       Thu Mar 21 11:30 - 11:36	 (00:06)
+reboot	 system boot  0.0.0.0	       Thu Mar 21 11:30 - 11:36	 (00:06)
+shutdown system down  0.0.0.0	       Thu Mar 21 11:29 - 11:30	 (00:00)
+student	 tty7	      0.0.0.0	       Thu Mar 21 11:13 - 11:29	 (00:16)
+runlevel (to lvl 5)   0.0.0.0	       Thu Mar 21 11:12 - 11:29	 (00:17)
+reboot	 system boot  0.0.0.0	       Thu Mar 21 11:12 - 11:29	 (00:17)
+shutdown system down  0.0.0.0	       Mon Aug 21 15:39 - 11:12 (212+19:33)
+student	 tty7	      0.0.0.0	       Mon Aug 21 15:27 - 15:39	 (00:11)
+runlevel (to lvl 5)   0.0.0.0	       Mon Aug 21 15:27 - 15:39	 (00:11)
+reboot	 system boot  0.0.0.0	       Mon Aug 21 15:27 - 15:39	 (00:11)
+shutdown system down  0.0.0.0	       Mon Aug 21 09:05 - 15:27	 (06:22)
+runlevel (to lvl 5)   0.0.0.0	       Mon Aug 21 09:04 - 09:05	 (00:00)
+reboot	 system boot  0.0.0.0	       Mon Aug 21 09:04 - 09:05	 (00:00)
+shutdown system down  0.0.0.0	       Mon Aug 21 08:58 - 09:04	 (00:06)
+student	 tty7	      0.0.0.0	       Mon Aug 21 08:45 - 08:58	 (00:13)
+runlevel (to lvl 5)   0.0.0.0	       Mon Aug 21 08:44 - 08:58	 (00:13)
+reboot	 system boot  0.0.0.0	       Mon Aug 21 08:44 - 08:58	 (00:13)
+shutdown system down  0.0.0.0	       Tue Aug	1 11:33 - 08:44 (19+21:11)
+student	 tty7	      0.0.0.0	       Tue Aug	1 11:14 - 11:33	 (00:18)
+mvoorhis tty7	      0.0.0.0	       Tue Aug	1 11:06 - 11:11	 (00:05)
+runlevel (to lvl 5)   0.0.0.0	       Tue Aug	1 11:06 - 11:33	 (00:26)
+reboot	 system boot  0.0.0.0	       Tue Aug	1 11:06 - 11:33	 (00:26)
+shutdown system down  0.0.0.0	       Mon Jul 31 09:35 - 11:06 (1+01:30)
+mvoorhis pts/0	      192.168.64.1     Mon Jul 31 07:41 - 09:35	 (01:54)
+runlevel (to lvl 5)   0.0.0.0	       Mon Jul 31 07:41 - 09:35	 (01:54)
+reboot	 system boot  0.0.0.0	       Mon Jul 31 07:40 - 09:35	 (01:55)
+shutdown system down  0.0.0.0	       Mon Jul 31 07:40 - 07:40	 (00:00)
+mvoorhis pts/0	      192.168.64.1     Thu Jul 27 10:31 - 07:40 (3+21:09)
+mvoorhis tty1	      0.0.0.0	       Thu Jul 27 10:24 - 13:53	 (03:29)
+runlevel (to lvl 5)   0.0.0.0	       Thu Jul 27 10:23 - 07:40 (3+21:16)
+reboot	 system boot  0.0.0.0	       Thu Jul 27 10:23 - 07:40 (3+21:17)
+shutdown system down  0.0.0.0	       Thu Jul 27 10:22 - 10:23	 (00:01)
+mvoorhis tty1	      0.0.0.0	       Thu Jul 27 10:22 - down	 (00:00)
+runlevel (to lvl 5)   0.0.0.0	       Thu Jul 27 10:21 - 10:22	 (00:00)
+reboot	 system boot  0.0.0.0	       Thu Jul 27 10:21 - 10:22	 (00:01)
+
+wtmp begins Thu Jul 27 10:21:33 2023
+student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ ./slug 2
+[SLUG PID: 32709]: Read seed value: 56789
+[SLUG PID: 32709]: Read seed value (converted to integer): 56789
+[Slug PID: 32709] Delay time is 4 seconds. Coin flip: 1
+[Slug PID: 32709] I’ll get the job done. Eventually...
+[SLUG PID: 32709]: Break time is over! I am running the 'id --group' command.
+1001
+student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ ./slug 3
+[SLUG PID: 32738]: Read seed value: 12345
+[SLUG PID: 32738]: Read seed value (converted to integer): 12345
+[Slug PID: 32738] Delay time is 6 seconds. Coin flip: 1
+[Slug PID: 32738] I’ll get the job done. Eventually...
+[SLUG PID: 32738]: Break time is over! I am running the 'id --group' command.
+1001
+student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ ./slug 4
+[SLUG PID: 32781]: Read seed value: 456
+[SLUG PID: 32781]: Read seed value (converted to integer): 456
+[Slug PID: 32781] Delay time is 3 seconds. Coin flip: 1
+[Slug PID: 32781] I’ll get the job done. Eventually...
+[SLUG PID: 32781]: Break time is over! I am running the 'id --group' command.
+1001
+student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ ./slugrace
+Starting the Slug Race!
+[SLUG PID: 32808]: Read seed value: 55555
+[SLUG PID: 32808]: Read seed value (converted to integer): 55555
+[Slug PID: 32808] Delay time is 6 seconds. Coin flip: 0
+[Slug PID: 32808] I’ll get the job done. Eventually...
+[SLUG PID: 32809]: Read seed value: 56789
+[SLUG PID: 32809]: Read seed value (converted to integer): 56789
+[Slug PID: 32809] Delay time is 4 seconds. Coin flip: 1
+[Slug PID: 32809] I’ll get the job done. Eventually...
+[SLUG PID: 32810]: Read seed value: 12345
+[SLUG PID: 32810]: Read seed value (converted to integer): 12345
+[Slug PID: 32810] Delay time is 6 seconds. Coin flip: 1
+[Slug PID: 32810] I’ll get the job done. Eventually...
+[SLUG PID: 32811]: Read seed value: 456
+[SLUG PID: 32811]: Read seed value (converted to integer): 456
+[Slug PID: 32811] Delay time is 3 seconds. Coin flip: 1
+[Slug PID: 32811] I’ll get the job done. Eventually...
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Running
+[SLUG PID: 32811]: Break time is over! I am running the 'id --group' command.
+1001
+Slug 4 finished in 3.324 seconds
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Finished
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Finished
+Race Status:
+ Slug 1: Running
+ Slug 2: Running
+ Slug 3: Running
+ Slug 4: Finished
+[SLUG PID: 32809]: Break time is over! I am running the 'id --group' command.
+1001
+Slug 2 finished in 4.329 seconds
+Race Status:
+ Slug 1: Running
+ Slug 2: Finished
+ Slug 3: Running
+ Slug 4: Finished
+Race Status:
+ Slug 1: Running
+ Slug 2: Finished
+ Slug 3: Running
+ Slug 4: Finished
+Race Status:
+ Slug 1: Running
+ Slug 2: Finished
+ Slug 3: Running
+ Slug 4: Finished
+Race Status:
+ Slug 1: Running
+ Slug 2: Finished
+ Slug 3: Running
+ Slug 4: Finished
+Race Status:
+ Slug 1: Running
+ Slug 2: Finished
+ Slug 3: Running
+ Slug 4: Finished
+Race Status:
+ Slug 1: Running
+ Slug 2: Finished
+ Slug 3: Running
+ Slug 4: Finished
+[SLUG PID: 32808]: Break time is over! I am running the 'id -u -x' command.
+student	 tty7	      0.0.0.0	       Mon Jan 20 23:13	   gone - no logout
+runlevel (to lvl 5)   0.0.0.0	       Mon Jan 20 23:10	  still running
+reboot	 system boot  0.0.0.0	       Mon Jan 20 23:10	  still running
+student	 tty7	      0.0.0.0	       Fri Jan 17 15:07 - crash (3+08:02)
+runlevel (to lvl 5)   0.0.0.0	       Fri Jan 17 15:07 - 23:10 (3+08:03)
+reboot	 system boot  0.0.0.0	       Fri Jan 17 15:07	  still running
+student	 tty7	      0.0.0.0	       Thu Jan 16 15:15 - crash	 (23:52)
+runlevel (to lvl 5)   0.0.0.0	       Thu Jan 16 15:02 - 15:07 (1+00:05)
+reboot	 system boot  0.0.0.0	       Thu Jan 16 15:02	  still running
+shutdown system down  0.0.0.0	       Wed Aug 28 11:28 - 15:02 (141+04:33)
+student	 tty7	      0.0.0.0	       Wed Aug 28 11:28 - 11:28	 (00:00)
+runlevel (to lvl 5)   0.0.0.0	       Wed Aug 28 11:28 - 11:28	 (00:00)
+reboot	 system boot  0.0.0.0	       Wed Aug 28 11:28 - 11:28	 (00:00)
+shutdown system down  0.0.0.0	       Wed Aug 28 11:28 - 11:28	 (00:00)
+student	 tty7	      0.0.0.0	       Wed Aug 28 11:26 - 11:28	 (00:01)
+runlevel (to lvl 5)   0.0.0.0	       Wed Aug 28 11:26 - 11:28	 (00:01)
+reboot	 system boot  0.0.0.0	       Wed Aug 28 11:26 - 11:28	 (00:01)
+shutdown system down  0.0.0.0	       Wed Aug 28 11:26 - 11:26	 (00:00)
+student	 tty7	      0.0.0.0	       Wed Aug 28 11:13 - 11:26	 (00:13)
+runlevel (to lvl 5)   0.0.0.0	       Wed Aug 28 11:12 - 11:26	 (00:13)
+reboot	 system boot  0.0.0.0	       Wed Aug 28 11:12 - 11:26	 (00:13)
+shutdown system down  0.0.0.0	       Wed Aug 28 11:12 - 11:12	 (00:00)
+student	 tty7	      0.0.0.0	       Wed Aug 28 11:04 - 11:12	 (00:08)
+runlevel (to lvl 5)   0.0.0.0	       Wed Aug 28 11:04 - 11:12	 (00:08)
+reboot	 system boot  0.0.0.0	       Wed Aug 28 11:04 - 11:12	 (00:08)
+shutdown system down  0.0.0.0	       Mon Mar 25 08:32 - 11:04 (156+02:31)
+student	 tty7	      0.0.0.0	       Mon Mar 25 08:29 - 08:32	 (00:03)
+student	 tty7	      0.0.0.0	       Mon Mar 25 08:24 - 08:28	 (00:04)
+runlevel (to lvl 5)   0.0.0.0	       Mon Mar 25 08:24 - 08:32	 (00:08)
+reboot	 system boot  0.0.0.0	       Mon Mar 25 08:24 - 08:32	 (00:08)
+shutdown system down  0.0.0.0	       Mon Mar 25 08:21 - 08:24	 (00:02)
+student	 tty7	      0.0.0.0	       Mon Mar 25 08:21 - 08:21	 (00:00)
+runlevel (to lvl 5)   0.0.0.0	       Mon Mar 25 08:21 - 08:21	 (00:00)
+reboot	 system boot  0.0.0.0	       Mon Mar 25 08:21 - 08:21	 (00:00)
+shutdown system down  0.0.0.0	       Mon Mar 25 08:21 - 08:21	 (00:00)
+student	 tty7	      0.0.0.0	       Mon Mar 25 08:14 - 08:21	 (00:06)
+runlevel (to lvl 5)   0.0.0.0	       Mon Mar 25 08:14 - 08:21	 (00:07)
+reboot	 system boot  0.0.0.0	       Mon Mar 25 08:14 - 08:21	 (00:07)
+shutdown system down  0.0.0.0	       Fri Mar 22 14:24 - 08:14 (2+17:49)
+student	 tty7	      0.0.0.0	       Fri Mar 22 14:17 - 14:24	 (00:06)
+runlevel (to lvl 5)   0.0.0.0	       Fri Mar 22 14:15 - 14:24	 (00:08)
+reboot	 system boot  0.0.0.0	       Fri Mar 22 14:15 - 14:24	 (00:08)
+shutdown system down  0.0.0.0	       Thu Mar 21 11:36 - 14:15 (1+02:38)
+student	 tty7	      0.0.0.0	       Thu Mar 21 11:30 - 11:36	 (00:06)
+runlevel (to lvl 5)   0.0.0.0	       Thu Mar 21 11:30 - 11:36	 (00:06)
+reboot	 system boot  0.0.0.0	       Thu Mar 21 11:30 - 11:36	 (00:06)
+shutdown system down  0.0.0.0	       Thu Mar 21 11:29 - 11:30	 (00:00)
+student	 tty7	      0.0.0.0	       Thu Mar 21 11:13 - 11:29	 (00:16)
+runlevel (to lvl 5)   0.0.0.0	       Thu Mar 21 11:12 - 11:29	 (00:17)
+reboot	 system boot  0.0.0.0	       Thu Mar 21 11:12 - 11:29	 (00:17)
+shutdown system down  0.0.0.0	       Mon Aug 21 15:39 - 11:12 (212+19:33)
+student	 tty7	      0.0.0.0	       Mon Aug 21 15:27 - 15:39	 (00:11)
+runlevel (to lvl 5)   0.0.0.0	       Mon Aug 21 15:27 - 15:39	 (00:11)
+reboot	 system boot  0.0.0.0	       Mon Aug 21 15:27 - 15:39	 (00:11)
+shutdown system down  0.0.0.0	       Mon Aug 21 09:05 - 15:27	 (06:22)
+runlevel (to lvl 5)   0.0.0.0	       Mon Aug 21 09:04 - 09:05	 (00:00)
+reboot	 system boot  0.0.0.0	       Mon Aug 21 09:04 - 09:05	 (00:00)
+shutdown system down  0.0.0.0	       Mon Aug 21 08:58 - 09:04	 (00:06)
+student	 tty7	      0.0.0.0	       Mon Aug 21 08:45 - 08:58	 (00:13)
+runlevel (to lvl 5)   0.0.0.0	       Mon Aug 21 08:44 - 08:58	 (00:13)
+reboot	 system boot  0.0.0.0	       Mon Aug 21 08:44 - 08:58	 (00:13)
+shutdown system down  0.0.0.0	       Tue Aug	1 11:33 - 08:44 (19+21:11)
+student	 tty7	      0.0.0.0	       Tue Aug	1 11:14 - 11:33	 (00:18)
+mvoorhis tty7	      0.0.0.0	       Tue Aug	1 11:06 - 11:11	 (00:05)
+runlevel (to lvl 5)   0.0.0.0	       Tue Aug	1 11:06 - 11:33	 (00:26)
+reboot	 system boot  0.0.0.0	       Tue Aug	1 11:06 - 11:33	 (00:26)
+shutdown system down  0.0.0.0	       Mon Jul 31 09:35 - 11:06 (1+01:30)
+mvoorhis pts/0	      192.168.64.1     Mon Jul 31 07:41 - 09:35	 (01:54)
+runlevel (to lvl 5)   0.0.0.0	       Mon Jul 31 07:41 - 09:35	 (01:54)
+reboot	 system boot  0.0.0.0	       Mon Jul 31 07:40 - 09:35	 (01:55)
+shutdown system down  0.0.0.0	       Mon Jul 31 07:40 - 07:40	 (00:00)
+mvoorhis pts/0	      192.168.64.1     Thu Jul 27 10:31 - 07:40 (3+21:09)
+mvoorhis tty1	      0.0.0.0	       Thu Jul 27 10:24 - 13:53	 (03:29)
+runlevel (to lvl 5)   0.0.0.0	       Thu Jul 27 10:23 - 07:40 (3+21:16)
+reboot	 system boot  0.0.0.0	       Thu Jul 27 10:23 - 07:40 (3+21:17)
+shutdown system down  0.0.0.0	       Thu Jul 27 10:22 - 10:23	 (00:01)
+mvoorhis tty1	      0.0.0.0	       Thu Jul 27 10:22 - down	 (00:00)
+runlevel (to lvl 5)   0.0.0.0	       Thu Jul 27 10:21 - 10:22	 (00:00)
+reboot	 system boot  0.0.0.0	       Thu Jul 27 10:21 - 10:22	 (00:01)
+
+[SLUG PID: 32810]: Break time is over! I am running the 'id --group' command.
+1001
+wtmp begins Thu Jul 27 10:21:33 2023
+Slug 1 finished in 6.319 seconds
+Slug 3 finished in 6.319 seconds
+Race Status:
+ Slug 1: Finished
+ Slug 2: Finished
+ Slug 3: Finished
+ Slug 4: Finished
+The Slug Race is over!
 student@csvm-ay2024-2025-arm64:~/Desktop/project1/project1-cs3013-os$ exit
 exit
 
-Script done on 2025-01-24 02:06:39-05:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2025-01-27 02:18:13-05:00 [COMMAND_EXIT_CODE="0"]
