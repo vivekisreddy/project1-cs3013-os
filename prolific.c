@@ -1,60 +1,54 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <stdio.h>   
+#include <stdlib.h>  
+#include <unistd.h>   
+#include <sys/wait.h> 
+#include <time.h>     
 
 int main() {
-    FILE *seedFile = fopen("seed.txt", "r");
-    if (seedFile == NULL) {
+    FILE *seedFile = fopen("seed.txt", "r"); // Open the file containing the seed value
+    if (seedFile == NULL) {                 // Check if the file exists
         perror("Failed to open seed.txt");
-        return 1;
+        return 1; // Exit with error
     }
+
     int seed;
-    if (fscanf(seedFile, "%d", &seed) != 1) {
+    if (fscanf(seedFile, "%d", &seed) != 1) { // Read the seed value from the file
         perror("Error reading seed value");
-        fclose(seedFile);
+        fclose(seedFile); // Close the file and exit if the read fails
         return 1;
     }
-    fclose(seedFile);
+    fclose(seedFile); // Close the file after reading
     printf("Read seed value: %d\n", seed);
-    printf("Read seed value (converted to integer): %d\n", seed);
 
-    srand(seed);
+    srand(seed); // Initialize random number generator with the seed
 
-    int minChild = 8;
-    int maxChild = 13;
-    int numChild = minChild + (rand() % (maxChild - minChild + 1));
+    int minChild = 8, maxChild = 13;
+    int numChild = minChild + (rand() % (maxChild - minChild + 1)); // Generate random number of child processes
     printf("Random Child Count: %d\n", numChild);
     printf("I’m feeling prolific!\n");
 
-    for (int i = 0; i < numChild; i++) {
-        pid_t pid = fork(); 
-        if (pid < 0) { 
+    for (int i = 0; i < numChild; i++) { // Loop to create child processes
+        pid_t pid = fork(); // Create a new process
+        if (pid < 0) {      // Handle fork failure
             perror("Fork failed");
             return 1;
-        } else if (pid == 0) {
-            // Child process
-            int waitTime = (rand() % 3) + 1;   
-            int exitCode = (rand() % 50) + 1; 
-            printf("[Child, PID: %d]: I am the child and I will wait %d seconds and exit with code %d.\n", getpid(), waitTime, exitCode);
-            sleep(waitTime);
+        } else if (pid == 0) { // Child process logic
+            srand(time(NULL) ^ getpid()); // Reseed random generator uniquely for each child
+            int waitTime = (rand() % 3) + 1; // Random wait time between 1-3 seconds
+            int exitCode = (rand() % 50) + 1; // Random exit code between 1-50
+            printf("[Child, PID: %d]: Waiting %d seconds, exiting with code %d.\n", getpid(), waitTime, exitCode);
+            sleep(waitTime); // Simulate work by sleeping
             printf("[Child, PID: %d]: Now exiting...\n", getpid());
-            exit(exitCode);
-        } else { 
-            // to fork off a child process and wait for it using system calls, 
-            // you would use the fork() function to create the child process and then use waitpid() 
-            // to wait for the child to finish, and uses macros like WIFEXITED and WEXITSTATUS 
-            // to properly interept the child's exit status within the parent process 
-            
-            // Parent process
-            printf("[Parent]: I am waiting for PID %d to finish.\n", pid);
+            exit(exitCode); // Terminate child process with exit code
+        } else { // Parent process logic
+            printf("[Parent]: Waiting for PID %d to finish.\n", pid);
             int status;
-            waitpid(pid, &status, 0);
-            if (WIFEXITED(status)) { // The WIFEXITED checks if the child process exited normally (not by signal)
-                printf("[Parent]: Child %d finished with status code %d. Onward!\n", pid, WEXITSTATUS(status)); // Retrieves the exit status of the child process if it exited normally
+            waitpid(pid, &status, 0); // Wait for the specific child process
+            if (WIFEXITED(status)) { // Check if the child exited normally
+                printf("[Parent]: Child %d finished with status code %d.\n", pid, WEXITSTATUS(status));
             }
         }
     }
 
-    return 0;
+    return 0; // Program completes successfully
 }
