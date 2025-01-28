@@ -1,5 +1,5 @@
-Script started on 2025-01-27 02:16:32-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="102" LINES="15"]
-[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ make 
+Script started on 2025-01-27 19:02:16-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="102" LINES="15"]
+[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ make
 [?2004lgcc -Wall -o prolific prolific.c
 Built prolific.
 gcc -Wall -o explorer explorer.c
@@ -13,104 +13,102 @@ Built slugrace.
 All programs built successfully.
 [?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./prolific
 [?2004lRead seed value: 12345
-Read seed value (converted to integer): 12345
 Random Child Count: 11
 I’m feeling prolific!
-[Parent]: I am waiting for PID 32353 to finish.
-[Child, PID: 32353]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32353]: Now exiting...
-[Parent]: Child 32353 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32378 to finish.
-[Child, PID: 32378]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32378]: Now exiting...
-[Parent]: Child 32378 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32392 to finish.
-[Child, PID: 32392]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32392]: Now exiting...
-[Parent]: Child 32392 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32403 to finish.
-[Child, PID: 32403]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32403]: Now exiting...
-[Parent]: Child 32403 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32428 to finish.
-[Child, PID: 32428]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32428]: Now exiting...
-[Parent]: Child 32428 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32430 to finish.
-[Child, PID: 32430]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32430]: Now exiting...
-[Parent]: Child 32430 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32455 to finish.
-[Child, PID: 32455]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32455]: Now exiting...
-[Parent]: Child 32455 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32472 to finish.
-[Child, PID: 32472]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32472]: Now exiting...
-[Parent]: Child 32472 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32483 to finish.
-[Child, PID: 32483]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32483]: Now exiting...
-[Parent]: Child 32483 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32508 to finish.
-[Child, PID: 32508]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32508]: Now exiting...
-[Parent]: Child 32508 finished with status code 24. Onward!
-[Parent]: I am waiting for PID 32509 to finish.
-[Child, PID: 32509]: I am the child and I will wait 3 seconds and exit with code 24.
-[Child, PID: 32509]: Now exiting...
-[Parent]: Child 32509 finished with status code 24. Onward!
-[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./generation
+[Parent]: Waiting for PID 41937 to finish.
+[Child, PID: 41937]: Waiting 3 seconds, exiting with code 43.
+[Child, PID: 41937]: Now exiting...
+[Parent]: Child 41937 finished with status code 43.
+[Parent]: Waiting for PID 41975 to finish.
+[Child, PID: 41975]: Waiting 1 seconds, exiting with code 34.
+[Child, PID: 41975]: Now exiting...
+[Parent]: Child 41975 finished with status code 34.
+[Parent]: Waiting for PID 41986 to finish.
+[Child, PID: 41986]: Waiting 3 seconds, exiting with code 43.
+[Child, PID: 41986]: Now exiting...
+[Parent]: Child 41986 finished with status code 43.
+[Parent]: Waiting for PID 41987 to finish.
+[Child, PID: 41987]: Waiting 3 seconds, exiting with code 16.
+[Child, PID: 41987]: Now exiting...
+[Parent]: Child 41987 finished with status code 16.
+[Parent]: Waiting for PID 42012 to finish.
+[Child, PID: 42012]: Waiting 3 seconds, exiting with code 47.
+[Child, PID: 42012]: Now exiting...
+[Parent]: Child 42012 finished with status code 47.
+[Parent]: Waiting for PID 42026 to finish.
+[Child, PID: 42026]: Waiting 1 seconds, exiting with code 45.
+[Child, PID: 42026]: Now exiting...
+[Parent]: Child 42026 finished with status code 45.
+[Parent]: Waiting for PID 42037 to finish.
+[Child, PID: 42037]: Waiting 3 seconds, exiting with code 19.
+[Child, PID: 42037]: Now exiting...
+[Parent]: Child 42037 finished with status code 19.
+[Parent]: Waiting for PID 42038 to finish.
+[Child, PID: 42038]: Waiting 2 seconds, exiting with code 50.
+[Child, PID: 42038]: Now exiting...
+[Parent]: Child 42038 finished with status code 50.
+[Parent]: Waiting for PID 42063 to finish.
+[Child, PID: 42063]: Waiting 1 seconds, exiting with code 43.
+[Child, PID: 42063]: Now exiting...
+[Parent]: Child 42063 finished with status code 43.
+[Parent]: Waiting for PID 42064 to finish.
+[Child, PID: 42064]: Waiting 3 seconds, exiting with code 29.
+[Child, PID: 42064]: Now exiting...
+[Parent]: Child 42064 finished with status code 29.
+[Parent]: Waiting for PID 42078 to finish.
+[Child, PID: 42078]: Waiting 3 seconds, exiting with code 41.
+[Child, PID: 42078]: Now exiting...
+[Parent]: Child 42078 finished with status code 41.
+[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./generation [K.c[K[K
 [?2004lRead seed value: 12345
 Random lifespan count: 12
 Time to meet the kids/grandkids/great grand kids/...
-[Parent, PID: 32552]: I am waiting for PID 32553 to finish
-[Child, PID: 32553]: I was called with descendant count = 12 and I'll have 11 descendants.
-[Parent, PID: 32553]: I am waiting for PID 32554 to finish
-[Child, PID: 32554]: I was called with descendant count = 11 and I'll have 10 descendants.
-[Parent, PID: 32554]: I am waiting for PID 32555 to finish
-[Child, PID: 32555]: I was called with descendant count = 10 and I'll have 9 descendants.
-[Parent, PID: 32555]: I am waiting for PID 32556 to finish
-[Child, PID: 32556]: I was called with descendant count = 9 and I'll have 8 descendants.
-[Parent, PID: 32556]: I am waiting for PID 32557 to finish
-[Child, PID: 32557]: I was called with descendant count = 8 and I'll have 7 descendants.
-[Parent, PID: 32557]: I am waiting for PID 32558 to finish
-[Child, PID: 32558]: I was called with descendant count = 7 and I'll have 6 descendants.
-[Parent, PID: 32558]: I am waiting for PID 32559 to finish
-[Child, PID: 32559]: I was called with descendant count = 6 and I'll have 5 descendants.
-[Parent, PID: 32559]: I am waiting for PID 32560 to finish
-[Child, PID: 32560]: I was called with descendant count = 5 and I'll have 4 descendants.
-[Parent, PID: 32560]: I am waiting for PID 32561 to finish
-[Child, PID: 32561]: I was called with descendant count = 4 and I'll have 3 descendants.
-[Parent, PID: 32561]: I am waiting for PID 32562 to finish
-[Child, PID: 32562]: I was called with descendant count = 3 and I'll have 2 descendants.
-[Parent, PID: 32562]: I am waiting for PID 32563 to finish
-[Child, PID: 32563]: I was called with descendant count = 2 and I'll have 1 descendants.
-[Parent, PID: 32563]: I am waiting for PID 32564 to finish
-[Child, PID: 32564]: I was called with descendant count = 1 and I'll have 0 descendants.
-[Parent, PID: 32563]: Child 32564 finished with status code = 0. It’s now my turn to exit
-[Parent, PID: 32562]: Child 32563 finished with status code = 1. It’s now my turn to exit
-[Parent, PID: 32561]: Child 32562 finished with status code = 2. It’s now my turn to exit
-[Parent, PID: 32560]: Child 32561 finished with status code = 3. It’s now my turn to exit
-[Parent, PID: 32559]: Child 32560 finished with status code = 4. It’s now my turn to exit
-[Parent, PID: 32558]: Child 32559 finished with status code = 5. It’s now my turn to exit
-[Parent, PID: 32557]: Child 32558 finished with status code = 6. It’s now my turn to exit
-[Parent, PID: 32556]: Child 32557 finished with status code = 7. It’s now my turn to exit
-[Parent, PID: 32555]: Child 32556 finished with status code = 8. It’s now my turn to exit
-[Parent, PID: 32554]: Child 32555 finished with status code = 9. It’s now my turn to exit
-[Parent, PID: 32553]: Child 32554 finished with status code = 10. It’s now my turn to exit
-[Parent, PID: 32552]: Child 32553 finished with status code = 11. It’s now my turn to exit
-[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./explorer
+[Parent, PID: 42107]: I am waiting for PID 42108 to finish
+[Child, PID: 42108]: I was called with descendant count = 12 and I'll have 11 descendants.
+[Parent, PID: 42108]: I am waiting for PID 42109 to finish
+[Child, PID: 42109]: I was called with descendant count = 11 and I'll have 10 descendants.
+[Parent, PID: 42109]: I am waiting for PID 42110 to finish
+[Child, PID: 42110]: I was called with descendant count = 10 and I'll have 9 descendants.
+[Parent, PID: 42110]: I am waiting for PID 42111 to finish
+[Child, PID: 42111]: I was called with descendant count = 9 and I'll have 8 descendants.
+[Parent, PID: 42111]: I am waiting for PID 42112 to finish
+[Child, PID: 42112]: I was called with descendant count = 8 and I'll have 7 descendants.
+[Parent, PID: 42112]: I am waiting for PID 42113 to finish
+[Child, PID: 42113]: I was called with descendant count = 7 and I'll have 6 descendants.
+[Parent, PID: 42113]: I am waiting for PID 42114 to finish
+[Child, PID: 42114]: I was called with descendant count = 6 and I'll have 5 descendants.
+[Parent, PID: 42114]: I am waiting for PID 42115 to finish
+[Child, PID: 42115]: I was called with descendant count = 5 and I'll have 4 descendants.
+[Parent, PID: 42115]: I am waiting for PID 42116 to finish
+[Child, PID: 42116]: I was called with descendant count = 4 and I'll have 3 descendants.
+[Parent, PID: 42116]: I am waiting for PID 42117 to finish
+[Child, PID: 42117]: I was called with descendant count = 3 and I'll have 2 descendants.
+[Parent, PID: 42117]: I am waiting for PID 42118 to finish
+[Child, PID: 42118]: I was called with descendant count = 2 and I'll have 1 descendants.
+[Parent, PID: 42118]: I am waiting for PID 42119 to finish
+[Child, PID: 42119]: I was called with descendant count = 1 and I'll have 0 descendants.
+[Parent, PID: 42118]: Child 42119 finished with status code = 0. It’s now my turn to exit
+[Parent, PID: 42117]: Child 42118 finished with status code = 1. It’s now my turn to exit
+[Parent, PID: 42116]: Child 42117 finished with status code = 2. It’s now my turn to exit
+[Parent, PID: 42115]: Child 42116 finished with status code = 3. It’s now my turn to exit
+[Parent, PID: 42114]: Child 42115 finished with status code = 4. It’s now my turn to exit
+[Parent, PID: 42113]: Child 42114 finished with status code = 5. It’s now my turn to exit
+[Parent, PID: 42112]: Child 42113 finished with status code = 6. It’s now my turn to exit
+[Parent, PID: 42111]: Child 42112 finished with status code = 7. It’s now my turn to exit
+[Parent, PID: 42110]: Child 42111 finished with status code = 8. It’s now my turn to exit
+[Parent, PID: 42109]: Child 42110 finished with status code = 9. It’s now my turn to exit
+[Parent, PID: 42108]: Child 42109 finished with status code = 10. It’s now my turn to exit
+[Parent, PID: 42107]: Child 42108 finished with status code = 11. It’s now my turn to exit
+[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./exploer[K[Krer
 [?2004lRead seed value: 12345
-Read seed value (converted to integer): 12345
 Selection #1: /usr [SUCCESS]
 Current reported directory: /usr
-[Child, PID: 32570]: Executing 'ls -tr' command...
+[Child, PID: 42154]: Executing 'ls -tr' command...
 local  games  share  lib  include  sbin  libexec  src  bin
-[Panret]: Child 32570 finished with status code 0. Onward!
+[Parent]: Child 42154 finished with status code 0. Onward!
 Selection #2: /bin [SUCCESS]
 Current reported directory: /usr/bin
-[Child, PID: 32571]: Executing 'ls -tr' command...
+[Child, PID: 42155]: Executing 'ls -tr' command...
  run-one			       lzcmp
  run-this-one			       lzcat
  run-one-until-success		       pinentry
@@ -885,161 +883,161 @@ Current reported directory: /usr/bin
  watchgnupg			       emacsclient.emacs
  kbxutil			       ebrowse.emacs
  gpg-zip			       ctags.emacs
- gpg-wks-server			       unopkg
- gpgv				       soffice
- gpgtar				       lowriter
- gpgsplit			       loweb
- gpgsm				       lomath
- gpgparsemail			       loimpress
- gpg-connect-agent		       lofromtemplate
- gpgconf			       loffice
- gpgcompose			       lodraw
- gpg-agent			       localc
- gpg				       libreoffice
- dirmngr-client			       bwrap
- dirmngr			       nsupdate
- gnome-software			       nslookup
- xdg-settings			       mdig
- xdg-screensaver		       host
- xdg-open			       dig
- xdg-mime			       delv
- xdg-icon-resource		       ppdpo
- xdg-email			       ppdmerge
- xdg-desktop-menu		       ppdi
- xdg-desktop-icon		       ppdhtml
- browse				       ppdc
- znew				       lpstat
- zmore				       lprm
- zless				       lpr
- zgrep				       lpq
- zforce				       lpoptions
- zfgrep				       lp
- zegrep				       ipptool
- zdiff				       ippfind
- zcmp				       cupstestppd
- zcat				       cancel
- uncompress			       ubuntu-drivers
- gzip				       quirks-handler
- gzexe				       nvidia-detector
- gunzip				       foomatic-rip
- mako-render			       driverless-fax
- dbus-uuidgen			       driverless
- dbus-update-activation-environment    rnano
- dbus-send			       nano
- dbus-run-session		       snapfuse
- dbus-monitor			       snapctl
- dbus-launch			       snap
- dbus-daemon			       Xorg
- dbus-cleanup-sockets		       Xephyr
- ntfswipe			       X
- ntfsusermap			       gtf
- ntfstruncate			       Xwayland
- ntfssecaudit			       sosreport
- ntfsrecover			       sos-collector
- ntfsmove			       sos
- ntfsls				       typeprof3.0
- ntfsinfo			       ruby3.0
- ntfsfix			       ri3.0
- ntfsfallocate			       rdoc3.0
- ntfsdecrypt			       rbs3.0
- ntfscmp			       rake3.0
- ntfscluster			       racc3.0
- ntfscat			       irb3.0
- ntfs-3g.probe			       gem3.0
- ntfs-3g			       erb3.0
- lowntfs-3g			       bundler3.0
- spa-resample			       bundle3.0
- spa-monitor			       ps2txt
- spa-json-dump			       ps2ps2
- spa-inspect			       ps2ps
- spa-acp-tool			       ps2pdfwr
- pw-v4l2			       ps2pdf14
- pw-top				       ps2pdf13
- pw-reserve			       ps2pdf12
- pw-record			       ps2pdf
- pw-profiler			       ps2epsi
- pw-play			       ps2ascii
- pw-mon				       printafm
- pw-midirecord			       pphs
- pw-midiplay			       pfbtopfa
- pw-mididump			       pf2afm
- pw-metadata			       pdf2ps
- pw-loopback			       pdf2dsc
- pw-link			       gsnd
- pw-dump			       gslp
- pw-dsdplay			       gslj
- pw-dot				       gsdj500
- pw-cli				       gsdj
- pw-cat				       gsbj
- pipewire			       gs
- unicode_stop			       ghostscript
- unicode_start			       eps2eps
- splitfont			       dvipdf
- showkey			       pkmon
- showconsolefont		       pkcon
- setmetamode			       gsettings
- setlogcons			       gresource
- setleds			       glib-compile-schemas
- setkeycodes			       gio-querymodules
- setfont			       gio
- screendump			       gdbus
- psfxtable			       gapplication
- psfstriptable			       scandeps
- psfgettable			       twistd3
- psfaddtable			       twist3
- openvt				       trial3
- mk_modmap			       tkconch3
- mapscrn			       pyhtmlizer3
- loadunimap			       mailmail3
- loadkeys			       conch3
- kbd_mode			       ckeygen3
- kbdinfo			       cftp3
- getkeycodes			       cloud-init-per
- fgconsole			       cloud-init
- dumpkeys			       cloud-id
- deallocvt			       curl
- codepage			       thunderbird
- chvt				       gst-typefind-1.0
- grub-syslinux2cfg		       gst-tester-1.0
- grub-script-check		       gst-stats-1.0
- grub-render-label		       gst-launch-1.0
- grub-mount			       gst-inspect-1.0
- grub-mkstandalone		       git-upload-pack
- grub-mkrescue			       git-upload-archive
- grub-mkrelpath			       git-shell
- grub-mkpasswd-pbkdf2		       git-receive-pack
- grub-mknetdir			       git
- grub-mklayout			       pdfunite
- grub-mkimage			       pdftotext
- grub-mkfont			       pdftops
- grub-menulst2cfg		       pdftoppm
- grub-kbdcomp			       pdftohtml
- grub-glue-efi			       pdftocairo
- grub-fstest			       pdfsig
- grub-file			       pdfseparate
- grub-editenv			       pdfinfo
- gnome-language-selector	       pdfimages
- check-language-support		       pdffonts
- nping				       pdfdetach
- nmap				       pdfattach
- tmux				       rsync-ssl
- nawk				       rsync
- awk				       rrsync
- which				       code
- pager				       python3.10
- mt				       pydoc3.10
- unlzma				       pdb3.10
- lzmore				       xxd
- lzma				       vimtutor
- lzless				       vim.tiny
- lzgrep				       vim.gtk3
- lzfgrep			       vim.basic
- lzegrep			       gvimtutor
+ gpg-wks-server			       bwrap
+ gpgv				       nsupdate
+ gpgtar				       nslookup
+ gpgsplit			       mdig
+ gpgsm				       host
+ gpgparsemail			       dig
+ gpg-connect-agent		       delv
+ gpgconf			       ppdpo
+ gpgcompose			       ppdmerge
+ gpg-agent			       ppdi
+ gpg				       ppdhtml
+ dirmngr-client			       ppdc
+ dirmngr			       lpstat
+ gnome-software			       lprm
+ xdg-settings			       lpr
+ xdg-screensaver		       lpq
+ xdg-open			       lpoptions
+ xdg-mime			       lp
+ xdg-icon-resource		       ipptool
+ xdg-email			       ippfind
+ xdg-desktop-menu		       cupstestppd
+ xdg-desktop-icon		       cancel
+ browse				       ubuntu-drivers
+ znew				       quirks-handler
+ zmore				       nvidia-detector
+ zless				       foomatic-rip
+ zgrep				       driverless-fax
+ zforce				       driverless
+ zfgrep				       rnano
+ zegrep				       nano
+ zdiff				       snapfuse
+ zcmp				       snapctl
+ zcat				       snap
+ uncompress			       Xorg
+ gzip				       Xephyr
+ gzexe				       X
+ gunzip				       gtf
+ mako-render			       Xwayland
+ dbus-uuidgen			       sosreport
+ dbus-update-activation-environment    sos-collector
+ dbus-send			       sos
+ dbus-run-session		       typeprof3.0
+ dbus-monitor			       ruby3.0
+ dbus-launch			       ri3.0
+ dbus-daemon			       rdoc3.0
+ dbus-cleanup-sockets		       rbs3.0
+ ntfswipe			       rake3.0
+ ntfsusermap			       racc3.0
+ ntfstruncate			       irb3.0
+ ntfssecaudit			       gem3.0
+ ntfsrecover			       erb3.0
+ ntfsmove			       bundler3.0
+ ntfsls				       bundle3.0
+ ntfsinfo			       ps2txt
+ ntfsfix			       ps2ps2
+ ntfsfallocate			       ps2ps
+ ntfsdecrypt			       ps2pdfwr
+ ntfscmp			       ps2pdf14
+ ntfscluster			       ps2pdf13
+ ntfscat			       ps2pdf12
+ ntfs-3g.probe			       ps2pdf
+ ntfs-3g			       ps2epsi
+ lowntfs-3g			       ps2ascii
+ spa-resample			       printafm
+ spa-monitor			       pphs
+ spa-json-dump			       pfbtopfa
+ spa-inspect			       pf2afm
+ spa-acp-tool			       pdf2ps
+ pw-v4l2			       pdf2dsc
+ pw-top				       gsnd
+ pw-reserve			       gslp
+ pw-record			       gslj
+ pw-profiler			       gsdj500
+ pw-play			       gsdj
+ pw-mon				       gsbj
+ pw-midirecord			       gs
+ pw-midiplay			       ghostscript
+ pw-mididump			       eps2eps
+ pw-metadata			       dvipdf
+ pw-loopback			       pkmon
+ pw-link			       pkcon
+ pw-dump			       gsettings
+ pw-dsdplay			       gresource
+ pw-dot				       glib-compile-schemas
+ pw-cli				       gio-querymodules
+ pw-cat				       gio
+ pipewire			       gdbus
+ unicode_stop			       gapplication
+ unicode_start			       scandeps
+ splitfont			       twistd3
+ showkey			       twist3
+ showconsolefont		       trial3
+ setmetamode			       tkconch3
+ setlogcons			       pyhtmlizer3
+ setleds			       mailmail3
+ setkeycodes			       conch3
+ setfont			       ckeygen3
+ screendump			       cftp3
+ psfxtable			       cloud-init-per
+ psfstriptable			       cloud-init
+ psfgettable			       cloud-id
+ psfaddtable			       curl
+ openvt				       thunderbird
+ mk_modmap			       gst-typefind-1.0
+ mapscrn			       gst-tester-1.0
+ loadunimap			       gst-stats-1.0
+ loadkeys			       gst-launch-1.0
+ kbd_mode			       gst-inspect-1.0
+ kbdinfo			       git-upload-pack
+ getkeycodes			       git-upload-archive
+ fgconsole			       git-shell
+ dumpkeys			       git-receive-pack
+ deallocvt			       git
+ codepage			       pdfunite
+ chvt				       pdftotext
+ grub-syslinux2cfg		       pdftops
+ grub-script-check		       pdftoppm
+ grub-render-label		       pdftohtml
+ grub-mount			       pdftocairo
+ grub-mkstandalone		       pdfsig
+ grub-mkrescue			       pdfseparate
+ grub-mkrelpath			       pdfinfo
+ grub-mkpasswd-pbkdf2		       pdfimages
+ grub-mknetdir			       pdffonts
+ grub-mklayout			       pdfdetach
+ grub-mkimage			       pdfattach
+ grub-mkfont			       rsync-ssl
+ grub-menulst2cfg		       rsync
+ grub-kbdcomp			       rrsync
+ grub-glue-efi			       code
+ grub-fstest			       python3.10
+ grub-file			       pydoc3.10
+ grub-editenv			       pdb3.10
+ gnome-language-selector	       xxd
+ check-language-support		       vimtutor
+ nping				       vim.tiny
+ nmap				       vim.gtk3
+ tmux				       vim.basic
+ nawk				       gvimtutor
+ awk				       unopkg
+ which				       soffice
+ pager				       lowriter
+ mt				       loweb
+ unlzma				       lomath
+ lzmore				       loimpress
+ lzma				       lofromtemplate
+ lzless				       loffice
+ lzgrep				       lodraw
+ lzfgrep			       localc
+ lzegrep			       libreoffice
  lzdiff
-[Panret]: Child 32571 finished with status code 0. Onward!
+[Parent]: Child 42155 finished with status code 0. Onward!
 Selection #3: /bin [SUCCESS]
 Current reported directory: /usr/bin
-[Child, PID: 32572]: Executing 'ls -tr' command...
+[Child, PID: 42163]: Executing 'ls -tr' command...
  run-one			       lzcmp
  run-this-one			       lzcat
  run-one-until-success		       pinentry
@@ -1814,204 +1812,204 @@ Current reported directory: /usr/bin
  watchgnupg			       emacsclient.emacs
  kbxutil			       ebrowse.emacs
  gpg-zip			       ctags.emacs
- gpg-wks-server			       unopkg
- gpgv				       soffice
- gpgtar				       lowriter
- gpgsplit			       loweb
- gpgsm				       lomath
- gpgparsemail			       loimpress
- gpg-connect-agent		       lofromtemplate
- gpgconf			       loffice
- gpgcompose			       lodraw
- gpg-agent			       localc
- gpg				       libreoffice
- dirmngr-client			       bwrap
- dirmngr			       nsupdate
- gnome-software			       nslookup
- xdg-settings			       mdig
- xdg-screensaver		       host
- xdg-open			       dig
- xdg-mime			       delv
- xdg-icon-resource		       ppdpo
- xdg-email			       ppdmerge
- xdg-desktop-menu		       ppdi
- xdg-desktop-icon		       ppdhtml
- browse				       ppdc
- znew				       lpstat
- zmore				       lprm
- zless				       lpr
- zgrep				       lpq
- zforce				       lpoptions
- zfgrep				       lp
- zegrep				       ipptool
- zdiff				       ippfind
- zcmp				       cupstestppd
- zcat				       cancel
- uncompress			       ubuntu-drivers
- gzip				       quirks-handler
- gzexe				       nvidia-detector
- gunzip				       foomatic-rip
- mako-render			       driverless-fax
- dbus-uuidgen			       driverless
- dbus-update-activation-environment    rnano
- dbus-send			       nano
- dbus-run-session		       snapfuse
- dbus-monitor			       snapctl
- dbus-launch			       snap
- dbus-daemon			       Xorg
- dbus-cleanup-sockets		       Xephyr
- ntfswipe			       X
- ntfsusermap			       gtf
- ntfstruncate			       Xwayland
- ntfssecaudit			       sosreport
- ntfsrecover			       sos-collector
- ntfsmove			       sos
- ntfsls				       typeprof3.0
- ntfsinfo			       ruby3.0
- ntfsfix			       ri3.0
- ntfsfallocate			       rdoc3.0
- ntfsdecrypt			       rbs3.0
- ntfscmp			       rake3.0
- ntfscluster			       racc3.0
- ntfscat			       irb3.0
- ntfs-3g.probe			       gem3.0
- ntfs-3g			       erb3.0
- lowntfs-3g			       bundler3.0
- spa-resample			       bundle3.0
- spa-monitor			       ps2txt
- spa-json-dump			       ps2ps2
- spa-inspect			       ps2ps
- spa-acp-tool			       ps2pdfwr
- pw-v4l2			       ps2pdf14
- pw-top				       ps2pdf13
- pw-reserve			       ps2pdf12
- pw-record			       ps2pdf
- pw-profiler			       ps2epsi
- pw-play			       ps2ascii
- pw-mon				       printafm
- pw-midirecord			       pphs
- pw-midiplay			       pfbtopfa
- pw-mididump			       pf2afm
- pw-metadata			       pdf2ps
- pw-loopback			       pdf2dsc
- pw-link			       gsnd
- pw-dump			       gslp
- pw-dsdplay			       gslj
- pw-dot				       gsdj500
- pw-cli				       gsdj
- pw-cat				       gsbj
- pipewire			       gs
- unicode_stop			       ghostscript
- unicode_start			       eps2eps
- splitfont			       dvipdf
- showkey			       pkmon
- showconsolefont		       pkcon
- setmetamode			       gsettings
- setlogcons			       gresource
- setleds			       glib-compile-schemas
- setkeycodes			       gio-querymodules
- setfont			       gio
- screendump			       gdbus
- psfxtable			       gapplication
- psfstriptable			       scandeps
- psfgettable			       twistd3
- psfaddtable			       twist3
- openvt				       trial3
- mk_modmap			       tkconch3
- mapscrn			       pyhtmlizer3
- loadunimap			       mailmail3
- loadkeys			       conch3
- kbd_mode			       ckeygen3
- kbdinfo			       cftp3
- getkeycodes			       cloud-init-per
- fgconsole			       cloud-init
- dumpkeys			       cloud-id
- deallocvt			       curl
- codepage			       thunderbird
- chvt				       gst-typefind-1.0
- grub-syslinux2cfg		       gst-tester-1.0
- grub-script-check		       gst-stats-1.0
- grub-render-label		       gst-launch-1.0
- grub-mount			       gst-inspect-1.0
- grub-mkstandalone		       git-upload-pack
- grub-mkrescue			       git-upload-archive
- grub-mkrelpath			       git-shell
- grub-mkpasswd-pbkdf2		       git-receive-pack
- grub-mknetdir			       git
- grub-mklayout			       pdfunite
- grub-mkimage			       pdftotext
- grub-mkfont			       pdftops
- grub-menulst2cfg		       pdftoppm
- grub-kbdcomp			       pdftohtml
- grub-glue-efi			       pdftocairo
- grub-fstest			       pdfsig
- grub-file			       pdfseparate
- grub-editenv			       pdfinfo
- gnome-language-selector	       pdfimages
- check-language-support		       pdffonts
- nping				       pdfdetach
- nmap				       pdfattach
- tmux				       rsync-ssl
- nawk				       rsync
- awk				       rrsync
- which				       code
- pager				       python3.10
- mt				       pydoc3.10
- unlzma				       pdb3.10
- lzmore				       xxd
- lzma				       vimtutor
- lzless				       vim.tiny
- lzgrep				       vim.gtk3
- lzfgrep			       vim.basic
- lzegrep			       gvimtutor
+ gpg-wks-server			       bwrap
+ gpgv				       nsupdate
+ gpgtar				       nslookup
+ gpgsplit			       mdig
+ gpgsm				       host
+ gpgparsemail			       dig
+ gpg-connect-agent		       delv
+ gpgconf			       ppdpo
+ gpgcompose			       ppdmerge
+ gpg-agent			       ppdi
+ gpg				       ppdhtml
+ dirmngr-client			       ppdc
+ dirmngr			       lpstat
+ gnome-software			       lprm
+ xdg-settings			       lpr
+ xdg-screensaver		       lpq
+ xdg-open			       lpoptions
+ xdg-mime			       lp
+ xdg-icon-resource		       ipptool
+ xdg-email			       ippfind
+ xdg-desktop-menu		       cupstestppd
+ xdg-desktop-icon		       cancel
+ browse				       ubuntu-drivers
+ znew				       quirks-handler
+ zmore				       nvidia-detector
+ zless				       foomatic-rip
+ zgrep				       driverless-fax
+ zforce				       driverless
+ zfgrep				       rnano
+ zegrep				       nano
+ zdiff				       snapfuse
+ zcmp				       snapctl
+ zcat				       snap
+ uncompress			       Xorg
+ gzip				       Xephyr
+ gzexe				       X
+ gunzip				       gtf
+ mako-render			       Xwayland
+ dbus-uuidgen			       sosreport
+ dbus-update-activation-environment    sos-collector
+ dbus-send			       sos
+ dbus-run-session		       typeprof3.0
+ dbus-monitor			       ruby3.0
+ dbus-launch			       ri3.0
+ dbus-daemon			       rdoc3.0
+ dbus-cleanup-sockets		       rbs3.0
+ ntfswipe			       rake3.0
+ ntfsusermap			       racc3.0
+ ntfstruncate			       irb3.0
+ ntfssecaudit			       gem3.0
+ ntfsrecover			       erb3.0
+ ntfsmove			       bundler3.0
+ ntfsls				       bundle3.0
+ ntfsinfo			       ps2txt
+ ntfsfix			       ps2ps2
+ ntfsfallocate			       ps2ps
+ ntfsdecrypt			       ps2pdfwr
+ ntfscmp			       ps2pdf14
+ ntfscluster			       ps2pdf13
+ ntfscat			       ps2pdf12
+ ntfs-3g.probe			       ps2pdf
+ ntfs-3g			       ps2epsi
+ lowntfs-3g			       ps2ascii
+ spa-resample			       printafm
+ spa-monitor			       pphs
+ spa-json-dump			       pfbtopfa
+ spa-inspect			       pf2afm
+ spa-acp-tool			       pdf2ps
+ pw-v4l2			       pdf2dsc
+ pw-top				       gsnd
+ pw-reserve			       gslp
+ pw-record			       gslj
+ pw-profiler			       gsdj500
+ pw-play			       gsdj
+ pw-mon				       gsbj
+ pw-midirecord			       gs
+ pw-midiplay			       ghostscript
+ pw-mididump			       eps2eps
+ pw-metadata			       dvipdf
+ pw-loopback			       pkmon
+ pw-link			       pkcon
+ pw-dump			       gsettings
+ pw-dsdplay			       gresource
+ pw-dot				       glib-compile-schemas
+ pw-cli				       gio-querymodules
+ pw-cat				       gio
+ pipewire			       gdbus
+ unicode_stop			       gapplication
+ unicode_start			       scandeps
+ splitfont			       twistd3
+ showkey			       twist3
+ showconsolefont		       trial3
+ setmetamode			       tkconch3
+ setlogcons			       pyhtmlizer3
+ setleds			       mailmail3
+ setkeycodes			       conch3
+ setfont			       ckeygen3
+ screendump			       cftp3
+ psfxtable			       cloud-init-per
+ psfstriptable			       cloud-init
+ psfgettable			       cloud-id
+ psfaddtable			       curl
+ openvt				       thunderbird
+ mk_modmap			       gst-typefind-1.0
+ mapscrn			       gst-tester-1.0
+ loadunimap			       gst-stats-1.0
+ loadkeys			       gst-launch-1.0
+ kbd_mode			       gst-inspect-1.0
+ kbdinfo			       git-upload-pack
+ getkeycodes			       git-upload-archive
+ fgconsole			       git-shell
+ dumpkeys			       git-receive-pack
+ deallocvt			       git
+ codepage			       pdfunite
+ chvt				       pdftotext
+ grub-syslinux2cfg		       pdftops
+ grub-script-check		       pdftoppm
+ grub-render-label		       pdftohtml
+ grub-mount			       pdftocairo
+ grub-mkstandalone		       pdfsig
+ grub-mkrescue			       pdfseparate
+ grub-mkrelpath			       pdfinfo
+ grub-mkpasswd-pbkdf2		       pdfimages
+ grub-mknetdir			       pdffonts
+ grub-mklayout			       pdfdetach
+ grub-mkimage			       pdfattach
+ grub-mkfont			       rsync-ssl
+ grub-menulst2cfg		       rsync
+ grub-kbdcomp			       rrsync
+ grub-glue-efi			       code
+ grub-fstest			       python3.10
+ grub-file			       pydoc3.10
+ grub-editenv			       pdb3.10
+ gnome-language-selector	       xxd
+ check-language-support		       vimtutor
+ nping				       vim.tiny
+ nmap				       vim.gtk3
+ tmux				       vim.basic
+ nawk				       gvimtutor
+ awk				       unopkg
+ which				       soffice
+ pager				       lowriter
+ mt				       loweb
+ unlzma				       lomath
+ lzmore				       loimpress
+ lzma				       lofromtemplate
+ lzless				       loffice
+ lzgrep				       lodraw
+ lzfgrep			       localc
+ lzegrep			       libreoffice
  lzdiff
-[Panret]: Child 32572 finished with status code 0. Onward!
+[Parent]: Child 42163 finished with status code 0. Onward!
 Selection #4: /proc [SUCCESS]
 Current reported directory: /proc
-[Child, PID: 32573]: Executing 'ls -tr' command...
-thread-self  4	  111	      826     1445  1644  1919	 20771		    kpageflags
-self	     371  110	      835     1448  1649  1976	 22375		    kpagecount
-cmdline      370  11	      860     1440  1645  2006	 fs		    kpagecgroup
-filesystems  34   107	      868     1442  1659  2027	 version_signature  key-users
-sys	     33   10	      869     1456  1662  2068	 24013		    kallsyms
-1	     32   swaps       881     1461  1654  2239	 vmstat		    ioports
-uptime	     318  mounts      904     1469  1678  2262	 tty		    execdomains
-acpi	     31   devices     926     1472  1686  2311	 scsi		    dynamic_debug
-net	     30   442	      927     1482  1691  2313	 misc		    diskstats
-kcore	     3	  meminfo     935     1480  1679  2483	 mdstat		    consoles
-cgroups      29   481	      940     1485  1701  1941	 locks		    buddyinfo
-cpuinfo      28   509	      942     1494  1708  1922	 keys		    bootconfig
-98	     26   707	      938     1499  1717  2907	 iomem		    24985
-97	     25   769	      1006    1506  1706  2976	 fb		    24987
-96	     24   771	      asound  1527  1736  2978	 driver		    24988
-95	     22   783	      1076    1528  1667  2982	 crypto		    24980
-93	     21   785	      1232    1546  1780  2983	 bus		    24971
-92	     203  787	      1275    1549  1726  3030	 zoneinfo	    28412
-91	     201  786	      1292    1555  1804  3039	 vmallocinfo	    28482
-88	     20   794	      1293    1559  1816  3077	 version	    28946
-87	     2	  irq	      1301    1564  1814  3121	 timer_list	    28896
-86	     19   stat	      1300    1568  844   3465	 sysvipc	    29712
-85	     18   interrupts  1299    1569  480   3650	 sysrq-trigger	    31116
-84	     16   798	      1302    1567  479   2985	 softirqs	    32156
-83	     155  800	      1306    1570  478   5951	 slabinfo	    32251
-82	     154  799	      1422    1572  475   8858	 schedstat	    32252
-81	     15   803	      1410    1574  1621  9447	 pressure	    32429
-80	     14   815	      1427    1597  1867  19136  partitions	    32573
-8	     13   816	      1436    1633  1903  20717  pagetypeinfo	    32569
-6	     12   kmsg	      1310    1639  1916  20737  modules
-5	     115  817	      1437    1623  1920  20761  loadavg
-[Panret]: Child 32573 finished with status code 0. Onward!
+[Child, PID: 42164]: Executing 'ls -tr' command...
+thread-self  4	  111	      826     1445  1644  1919	 28412		    loadavg
+self	     371  110	      835     1448  1649  1976	 28482		    kpageflags
+cmdline      370  11	      860     1440  1645  2006	 33490		    kpagecount
+filesystems  34   107	      868     1442  1659  2027	 33501		    kpagecgroup
+sys	     33   10	      869     1456  1662  2068	 33558		    key-users
+1	     32   swaps       881     1461  1654  2239	 38310		    kallsyms
+uptime	     318  mounts      904     1469  1678  2262	 version_signature  ioports
+acpi	     31   devices     926     1472  1686  2311	 tty		    execdomains
+net	     30   442	      927     1482  1691  2313	 scsi		    dynamic_debug
+kcore	     3	  meminfo     935     1480  1679  2483	 misc		    driver
+cgroups      29   481	      940     1485  1701  1941	 locks		    diskstats
+cpuinfo      28   509	      942     1494  1708  1922	 keys		    crypto
+98	     26   707	      938     1499  1717  2907	 iomem		    consoles
+97	     25   769	      1006    1506  1706  2976	 fs		    buddyinfo
+96	     24   771	      asound  1527  1736  2978	 fb		    bootconfig
+95	     22   783	      1076    1528  1667  2982	 bus		    39038
+93	     21   785	      1232    1546  1780  2983	 zoneinfo	    39035
+92	     203  787	      1275    1549  1726  3030	 vmstat		    39088
+91	     201  786	      1292    1555  1804  3039	 vmallocinfo	    40023
+88	     20   794	      1293    1559  1816  3077	 version	    40885
+87	     2	  irq	      1301    1564  1814  3121	 timer_list	    40840
+86	     19   stat	      1300    1568  844   3465	 sysvipc	    40838
+85	     18   interrupts  1299    1569  480   3650	 sysrq-trigger	    41090
+84	     16   798	      1302    1567  479   2985	 softirqs	    41853
+83	     155  800	      1306    1570  478   5951	 slabinfo	    41854
+82	     154  799	      1422    1572  475   8858	 schedstat	    42164
+81	     15   803	      1410    1574  1621  9447	 pressure	    42153
+80	     14   815	      1427    1597  1867  20717  partitions
+8	     13   816	      1436    1633  1903  20737  pagetypeinfo
+6	     12   kmsg	      1310    1639  1916  24987  modules
+5	     115  817	      1437    1623  1920  24988  mdstat
+[Parent]: Child 42164 finished with status code 0. Onward!
 Selection #5: /usr [SUCCESS]
 Current reported directory: /usr
-[Child, PID: 32574]: Executing 'ls -tr' command...
+[Child, PID: 42165]: Executing 'ls -tr' command...
 local  games  share  lib  include  sbin  libexec  src  bin
-[Panret]: Child 32574 finished with status code 0. Onward!
+[Parent]: Child 42165 finished with status code 0. Onward!
 [?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./slug 1 
-[?2004l[SLUG PID: 32626]: Read seed value: 55555
-[SLUG PID: 32626]: Read seed value (converted to integer): 55555
-[Slug PID: 32626] Delay time is 6 seconds. Coin flip: 0
-[Slug PID: 32626] I’ll get the job done. Eventually...
-[SLUG PID: 32626]: Break time is over! I am running the 'id -u -x' command.
+[?2004l[SLUG PID: 42189]: Read seed value: 55555
+[SLUG PID: 42189]: Read seed value (converted to integer): 55555
+[Slug PID: 42189] Delay time is 6 seconds. Coin flip: 0
+[Slug PID: 42189] I’ll get the job done. Eventually...
+[SLUG PID: 42189]: Break time is over! I am running the 'id -u -x' command.
 student  tty7         0.0.0.0          Mon Jan 20 23:13    gone - no logout
 runlevel (to lvl 5)   0.0.0.0          Mon Jan 20 23:10   still running
 reboot   system boot  0.0.0.0          Mon Jan 20 23:10   still running
@@ -2094,141 +2092,79 @@ reboot   system boot  0.0.0.0          Thu Jul 27 10:21 - 10:22  (00:01)
 
 wtmp begins Thu Jul 27 10:21:33 2023
 [?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./slug 2
-[?2004l[SLUG PID: 32709]: Read seed value: 56789
-[SLUG PID: 32709]: Read seed value (converted to integer): 56789
-[Slug PID: 32709] Delay time is 4 seconds. Coin flip: 1
-[Slug PID: 32709] I’ll get the job done. Eventually...
-[SLUG PID: 32709]: Break time is over! I am running the 'id --group' command.
+[?2004l[SLUG PID: 42236]: Read seed value: 56789
+[SLUG PID: 42236]: Read seed value (converted to integer): 56789
+[Slug PID: 42236] Delay time is 4 seconds. Coin flip: 1
+[Slug PID: 42236] I’ll get the job done. Eventually...
+[SLUG PID: 42236]: Break time is over! I am running the 'id --group' command.
 1001
-[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./slug 2[K3
-[?2004l[SLUG PID: 32738]: Read seed value: 12345
-[SLUG PID: 32738]: Read seed value (converted to integer): 12345
-[Slug PID: 32738] Delay time is 6 seconds. Coin flip: 1
-[Slug PID: 32738] I’ll get the job done. Eventually...
-[SLUG PID: 32738]: Break time is over! I am running the 'id --group' command.
+[?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./slug 3
+[?2004l[SLUG PID: 42294]: Read seed value: 12345
+[SLUG PID: 42294]: Read seed value (converted to integer): 12345
+[Slug PID: 42294] Delay time is 6 seconds. Coin flip: 1
+[Slug PID: 42294] I’ll get the job done. Eventually...
+[SLUG PID: 42294]: Break time is over! I am running the 'id --group' command.
 1001
 [?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./slug 4
-[?2004l[SLUG PID: 32781]: Read seed value: 456
-[SLUG PID: 32781]: Read seed value (converted to integer): 456
-[Slug PID: 32781] Delay time is 3 seconds. Coin flip: 1
-[Slug PID: 32781] I’ll get the job done. Eventually...
-[SLUG PID: 32781]: Break time is over! I am running the 'id --group' command.
+[?2004l[SLUG PID: 42354]: Read seed value: 456
+[SLUG PID: 42354]: Read seed value (converted to integer): 456
+[Slug PID: 42354] Delay time is 3 seconds. Coin flip: 1
+[Slug PID: 42354] I’ll get the job done. Eventually...
+[SLUG PID: 42354]: Break time is over! I am running the 'id --group' command.
 1001
 [?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ ./slugrace
-[?2004lStarting the Slug Race!
-[SLUG PID: 32808]: Read seed value: 55555
-[SLUG PID: 32808]: Read seed value (converted to integer): 55555
-[Slug PID: 32808] Delay time is 6 seconds. Coin flip: 0
-[Slug PID: 32808] I’ll get the job done. Eventually...
-[SLUG PID: 32809]: Read seed value: 56789
-[SLUG PID: 32809]: Read seed value (converted to integer): 56789
-[Slug PID: 32809] Delay time is 4 seconds. Coin flip: 1
-[Slug PID: 32809] I’ll get the job done. Eventually...
-[SLUG PID: 32810]: Read seed value: 12345
-[SLUG PID: 32810]: Read seed value (converted to integer): 12345
-[Slug PID: 32810] Delay time is 6 seconds. Coin flip: 1
-[Slug PID: 32810] I’ll get the job done. Eventually...
-[SLUG PID: 32811]: Read seed value: 456
-[SLUG PID: 32811]: Read seed value (converted to integer): 456
-[Slug PID: 32811] Delay time is 3 seconds. Coin flip: 1
-[Slug PID: 32811] I’ll get the job done. Eventually...
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Running
-[SLUG PID: 32811]: Break time is over! I am running the 'id --group' command.
+[?2004l[Parent]: Starting the Slug Race!
+[Parent]: I forked off child 42377.
+[Parent]: I forked off child 42378.
+[Child, PID: 42377]: Executing './slug 1' command...
+[Parent]: I forked off child 42379.
+[Parent]: I forked off child 42380.
+[Child, PID: 42378]: Executing './slug 2' command...
+[SLUG PID: 42377]: Read seed value: 55555
+[SLUG PID: 42378]: Read seed value: 56789
+[SLUG PID: 42378]: Read seed value (converted to integer): 56789
+[Slug PID: 42378] Delay time is 4 seconds. Coin flip: 1
+[Slug PID: 42378] I’ll get the job done. Eventually...
+[SLUG PID: 42377]: Read seed value (converted to integer): 55555
+[Child, PID: 42379]: Executing './slug 3' command...
+[SLUG PID: 42379]: Read seed value: 12345
+[Slug PID: 42377] Delay time is 6 seconds. Coin flip: 0
+[Slug PID: 42377] I’ll get the job done. Eventually...
+[SLUG PID: 42379]: Read seed value (converted to integer): 12345
+[Slug PID: 42379] Delay time is 6 seconds. Coin flip: 1
+[Slug PID: 42379] I’ll get the job done. Eventually...
+[Child, PID: 42380]: Executing './slug 4' command...
+[SLUG PID: 42380]: Read seed value: 456
+[SLUG PID: 42380]: Read seed value (converted to integer): 456
+[Slug PID: 42380] Delay time is 3 seconds. Coin flip: 1
+[Slug PID: 42380] I’ll get the job done. Eventually...
+The race is ongoing. The following children are still racing: 42377 42378 42379 42380 
+The race is ongoing. The following children are still racing: 42377 42378 42379 42380 
+The race is ongoing. The following children are still racing: 42377 42378 42379 42380 
+The race is ongoing. The following children are still racing: 42377 42378 42379 42380 
+The race is ongoing. The following children are still racing: 42377 42378 42379 42380 
+The race is ongoing. The following children are still racing: 42377 42378 42379 42380 
+The race is ongoing. The following children are still racing: 42377 42378 42379 42380 
+The race is ongoing. The following children are still racing: 42377 42378 42379 42380 
+[SLUG PID: 42380]: Break time is over! I am running the 'id --group' command.
 1001
-Slug 4 finished in 3.324 seconds
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Finished
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Finished
-Race Status:
- Slug 1: Running
- Slug 2: Running
- Slug 3: Running
- Slug 4: Finished
-[SLUG PID: 32809]: Break time is over! I am running the 'id --group' command.
+Child 42380 has crossed the finish line! It took 3.009 seconds
+The race is ongoing. The following children are still racing: 42377 42378 42379 
+The race is ongoing. The following children are still racing: 42377 42378 42379 
+The race is ongoing. The following children are still racing: 42377 42378 42379 
+The race is ongoing. The following children are still racing: 42377 42378 42379 
+[SLUG PID: 42378]: Break time is over! I am running the 'id --group' command.
 1001
-Slug 2 finished in 4.329 seconds
-Race Status:
- Slug 1: Running
- Slug 2: Finished
- Slug 3: Running
- Slug 4: Finished
-Race Status:
- Slug 1: Running
- Slug 2: Finished
- Slug 3: Running
- Slug 4: Finished
-Race Status:
- Slug 1: Running
- Slug 2: Finished
- Slug 3: Running
- Slug 4: Finished
-Race Status:
- Slug 1: Running
- Slug 2: Finished
- Slug 3: Running
- Slug 4: Finished
-Race Status:
- Slug 1: Running
- Slug 2: Finished
- Slug 3: Running
- Slug 4: Finished
-Race Status:
- Slug 1: Running
- Slug 2: Finished
- Slug 3: Running
- Slug 4: Finished
-[SLUG PID: 32808]: Break time is over! I am running the 'id -u -x' command.
+Child 42378 has crossed the finish line! It took 4.334 seconds
+The race is ongoing. The following children are still racing: 42377 42379 
+The race is ongoing. The following children are still racing: 42377 42379 
+The race is ongoing. The following children are still racing: 42377 42379 
+The race is ongoing. The following children are still racing: 42377 42379 
+The race is ongoing. The following children are still racing: 42377 42379 
+The race is ongoing. The following children are still racing: 42377 42379 
+[SLUG PID: 42377]: Break time is over! I am running the 'id -u -x' command.
+[SLUG PID: 42379]: Break time is over! I am running the 'id --group' command.
+1001
 student  tty7         0.0.0.0          Mon Jan 20 23:13    gone - no logout
 runlevel (to lvl 5)   0.0.0.0          Mon Jan 20 23:10   still running
 reboot   system boot  0.0.0.0          Mon Jan 20 23:10   still running
@@ -2309,18 +2245,11 @@ mvoorhis tty1         0.0.0.0          Thu Jul 27 10:22 - down   (00:00)
 runlevel (to lvl 5)   0.0.0.0          Thu Jul 27 10:21 - 10:22  (00:00)
 reboot   system boot  0.0.0.0          Thu Jul 27 10:21 - 10:22  (00:01)
 
-[SLUG PID: 32810]: Break time is over! I am running the 'id --group' command.
-1001
 wtmp begins Thu Jul 27 10:21:33 2023
-Slug 1 finished in 6.319 seconds
-Slug 3 finished in 6.319 seconds
-Race Status:
- Slug 1: Finished
- Slug 2: Finished
- Slug 3: Finished
- Slug 4: Finished
-The Slug Race is over!
+Child 42377 has crossed the finish line! It took 6.334 seconds
+Child 42379 has crossed the finish line! It took 6.334 seconds
+The race is over! It took 7.-666 seconds
 [?2004h]0;student@csvm-ay2024-2025-arm64: ~/Desktop/project1/project1-cs3013-os[01;32mstudent@csvm-ay2024-2025-arm64[00m:[01;34m~/Desktop/project1/project1-cs3013-os[00m$ exit
 [?2004lexit
 
-Script done on 2025-01-27 02:18:13-05:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2025-01-27 19:04:17-05:00 [COMMAND_EXIT_CODE="0"]
